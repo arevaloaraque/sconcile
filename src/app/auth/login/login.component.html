@@ -316,7 +316,7 @@
 			<div class="content d-flex justify-content-center align-items-center">
 
 				<!-- Login form -->
-				<form class="login-form" action="index.html">
+				<form class="login-form" >
 					<div class="card mb-0">
 						<div class="card-body">
 							<div class="text-center mb-3">
@@ -340,7 +340,7 @@
 							</div>
 
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 ml-2"></i></button>
+								<button type="button" (click)="loginMe()" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 ml-2"></i></button>
 							</div>
 
 							<div class="text-center">

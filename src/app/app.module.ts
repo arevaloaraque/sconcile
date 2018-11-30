@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { BasicInputComponent } from './component/json-forms/basic-input/basic-in
 import { AdvancedInputeComponent } from './component/json-forms/advanced-inpute/advanced-inpute.component';
 import { ControlsComponent } from './component/json-forms/controls/controls.component';
 
+import { AuthGuard } from './_guards';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +54,10 @@ import { ControlsComponent } from './component/json-forms/controls/controls.comp
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

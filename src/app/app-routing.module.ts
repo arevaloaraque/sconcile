@@ -28,6 +28,7 @@ import { BasicInputComponent } from './component/json-forms/basic-input/basic-in
 import { AdvancedInputeComponent } from './component/json-forms/advanced-inpute/advanced-inpute.component';
 import { ControlsComponent } from './component/json-forms/controls/controls.component';
 
+import { AuthGuard } from './_guards';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
