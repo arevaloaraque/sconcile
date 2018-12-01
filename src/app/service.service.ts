@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from "@angular/http";
 import { HttpClient,HttpHeaders } from '@angular/common/http';
+import {environment} from '../environments/environment';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceService {
 
-  API_URL  =  'https://devsconcile.apps-lapaymentgroup.com';
-
   constructor(
     private httpClient: HttpClient
   ) { }
 
-  login(){
+  api=environment.sconcile_service;
+  login(username:string,password:string){
+
     let httpHeaders = new HttpHeaders({
       'Content-Type' : 'application/json'
     });
@@ -21,13 +23,24 @@ export class ServiceService {
       headers: httpHeaders
     };
 
-    return this.httpClient.post(
+    return this.httpClient.post<any>(
       "/auth/login/",
         {
-            "username": "kumbhani",
-            "password": "kumbhani"
+            "username": username,
+            "password": password
         },
-        options);
+        options).pipe(map(user=>{
+            if (user && user.token) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('currentUser', JSON.stringify(user));
+            }
+
+          return user;
+        }))
+  }
+  logout() {
+    // remove user from local storage to log user out
+    localStorage.removeItem('currentUser');
   }
 
 }
