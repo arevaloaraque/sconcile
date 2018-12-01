@@ -22,7 +22,7 @@ export class ServiceService {
     };
 
     return this.httpClient.post(
-        "https://devsconcile.apps-lapaymentgroup.com/auth/login/",
+      "/auth/login/",
         {
             "username": "kumbhani",
             "password": "kumbhani"
