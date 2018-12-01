@@ -14,8 +14,9 @@ export class ServiceService {
   ) { }
 
   api=environment.sconcile_service;
-  login(username:string,password:string){
 
+  login(username:string,password:string){
+    console.log('api',this.api);
     let httpHeaders = new HttpHeaders({
       'Content-Type' : 'application/json'
     });

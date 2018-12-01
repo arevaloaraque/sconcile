@@ -9,7 +9,9 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  data:object
   ngOnInit() {
+    this.data=JSON.parse(localStorage.getItem('currentUser'));
   }
 
 }

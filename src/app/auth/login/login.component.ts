@@ -35,22 +35,11 @@ export class LoginComponent implements OnInit {
     this.apiservice.logout();
   }
 
-
-  // logout() {
-  //   localStorage.removeItem('currentUser');
-  //   this.router.navigate(["login"]);
-  // }
-
   get f() { return this.loginForm.controls; }
 
   loginMe(){
     console.log('login me');
-  //   this.apiservice.login()
-  //   .subscribe((data) => console.log('data',data));
-  //  }
-
    this.submitted = true;
-
         // stop here if form is invalid
         if (this.loginForm.invalid) {
             return;

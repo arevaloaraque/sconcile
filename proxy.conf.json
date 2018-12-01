@@ -1,6 +1,6 @@
 {
   "/auth": {
-    "target": "https://devsconcile.apps-lapaymentgroup.com",
+    "target": "https://devsconcileservice.apps-lapaymentgroup.com",
     "secure": false,
     "changeOrigin": true
   }
