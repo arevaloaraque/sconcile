@@ -24,7 +24,7 @@ export class ServiceService {
     };
 
     return this.httpClient.post<any>(
-      "/auth/login/",
+      this.api+"/auth/login/",
         {
             "username": username,
             "password": password
