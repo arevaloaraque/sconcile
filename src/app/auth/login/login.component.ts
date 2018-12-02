@@ -3,6 +3,8 @@ import { Router,ActivatedRoute } from '@angular/router';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 import {ServiceService} from '../../service.service'
 @Component({
@@ -13,7 +15,6 @@ import {ServiceService} from '../../service.service'
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
-    loading = false;
     submitted = false;
     returnUrl: string;
 
@@ -21,14 +22,16 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private apiservice:ServiceService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private toastrService:ToastrService,
+    private spinner: NgxSpinnerService
   ) { }
 
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
         username: ['', Validators.required],
-        password: ['', Validators.required]
+        password: ['', [Validators.required,Validators.minLength(5)]]
     });
 
     // reset login status
@@ -39,23 +42,25 @@ export class LoginComponent implements OnInit {
 
   loginMe(){
     console.log('login me');
-   this.submitted = true;
-        // stop here if form is invalid
-        if (this.loginForm.invalid) {
-            return;
-        }
+    this.submitted = true;
+    // stop here if form is invalid
+    if (this.loginForm.invalid) {
+      return;
+    }
+    this.spinner.show();
 
-        this.loading = true;
-        this.apiservice.login(this.f.username.value, this.f.password.value)
-            .pipe(first())
-            .subscribe(
-                data => {
-                    this.router.navigate(['/home']);
-                },
-                error => {
-                  console.log('Error');
-                    this.loading = false;
-                });
+    this.apiservice.login(this.f.username.value, this.f.password.value)
+    .pipe(first())
+    .subscribe(
+      data => {
+        this.toastrService.success('Login successfully!');
+        this.router.navigate(['/home']);
+      },
+      error => {
+          console.log('Error',error);
+          this.toastrService.error('Login error!');
+          this.spinner.hide();
+      });
     }
 }
 

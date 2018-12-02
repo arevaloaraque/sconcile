@@ -2,7 +2,12 @@
 
 	<!-- Page content -->
 	<div class="page-content" style="height: 100vh;">
-
+		  <ngx-spinner
+			bdColor = "rgba(51, 51, 51, 0.8)"
+			size = "large"
+			color = "#fff"
+			type = "ball-atom"
+			></ngx-spinner>
 		<!-- Main content -->
 		<div class="content-wrapper">
 
@@ -14,7 +19,8 @@
 					<div class="card mb-0">
 						<div class="card-body">
 							<div class="text-center mb-3">
-								<i class="icon-reading icon-2x text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1"></i>
+								<!-- <i class="icon-flip-vertical2 icon-2x text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1"></i> -->
+								<img src="assets/img/logo_login.png" alt="" style="height: 98px; border-color: #206fb2 #1f6eb0 #1f2a51 #1c2b49;" class="text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1">
 								<h5 class="mb-0">Login to your account</h5>
 								<span class="d-block text-muted">Enter your credentials below</span>
 							</div>
@@ -36,6 +42,7 @@
 								</div>
 								<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
 									<div *ngIf="f.password.errors.required">Password is required</div>
+									<div *ngIf="f.password.errors.minlength">Password must be at least 5 characters</div>
 								</div>
 							</div>
 
