@@ -28,6 +28,6 @@ export class AppComponent {
       })
       .filter(route => route.outlet === 'primary')
       .mergeMap(route => route.data)
-      .subscribe((event) => this.titleService.setTitle(event['title'] + '- SConcile - LatAm Payment Group'));
+      .subscribe((event) => this.titleService.setTitle(event['title'] + ' - SConcile - LatAm Payment Group'));
   }
 }
