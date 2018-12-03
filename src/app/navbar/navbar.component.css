@@ -1,3 +1,9 @@
 .navbar-brand {
     min-width: 12.625rem !important;
 }
+p{
+    margin-top: 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
