@@ -1,0 +1,11 @@
+{
+    "demo": {
+        "title": "Demo de traducción",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "menu":{
+        "home":"Casa",
+        "dashboard":"Tablero",
+        "user-profile":"Usuario Perfil"
+    }
+}

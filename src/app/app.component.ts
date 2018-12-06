@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
+import {TranslateService} from '@ngx-translate/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,8 +19,13 @@ export class AppComponent {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private titleService: Title
-  ) { }
+    private titleService: Title,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('es');
+  }
+
+
   ngOnInit() {
     this.router.events
       .filter(event => event instanceof NavigationEnd)

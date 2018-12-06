@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule }    from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +16,9 @@ import { AuthGuard } from './_guards';
 import { FooterComponent } from './footer/footer.component';
 import { UserProfileComponent } from './component/user-profile/user-profile.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -35,9 +38,20 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

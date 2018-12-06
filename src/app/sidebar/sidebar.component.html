@@ -20,7 +20,15 @@
           <a routerLink="/home" class="nav-link" routerLinkActive="active">
             <i class="icon-home4"></i>
             <span>
-              Dashboard
+                {{ 'menu.dashboard' | translate }}
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/userprofile" class="nav-link" routerLinkActive="active">
+            <i class="icon-home4"></i>
+            <span>
+                {{'menu.user-profile' | translate}}
             </span>
           </a>
         </li>
