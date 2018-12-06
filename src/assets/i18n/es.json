@@ -7,5 +7,15 @@
         "home":"Casa",
         "dashboard":"Tablero",
         "user-profile":"Usuario Perfil"
+    },
+    "auth":{
+        "title":"iniciar sesión en tu cuenta",
+        "subtitle":"Entrar tu cartas credenciales abajo",
+        "username":"nombre de usuario",
+        "is":"es",
+        "required":"necesario",
+        "password":"contraseña",
+        "signin":"Registrarse",
+        "forgot":"Olvidó"
     }
 }

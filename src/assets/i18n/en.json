@@ -7,5 +7,15 @@
         "home":"Home",
         "dashboard":"Dashboard",
         "user-profile":"User Profile"
+    },
+    "auth":{
+        "title":"Login to your account",
+        "subtitle":"Enter your credentials below",
+        "username":"Username",
+        "is":"is",
+        "required":"required",
+        "password":"Password",
+        "signin":"Sign in",
+        "forgot":"Forgot"
     }
 }

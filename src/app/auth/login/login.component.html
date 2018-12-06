@@ -21,17 +21,17 @@
 							<div class="text-center mb-3">
 								<!-- <i class="icon-flip-vertical2 icon-2x text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1"></i> -->
 								<img src="assets/img/logo_login.png" alt="" style="height: 98px; border-color: #206fb2 #1f6eb0 #1f2a51 #1c2b49;" class="text-slate-300 border-slate-300 border-3 rounded-round p-3 mb-3 mt-1">
-								<h5 class="mb-0">Login to your account</h5>
-								<span class="d-block text-muted">Enter your credentials below</span>
+								<h5 class="mb-0">{{ 'auth.title' | translate }}</h5>
+								<span class="d-block text-muted">{{'auth.subtitle' | translate }}</span>
 							</div>
 
 							<div class="form-group form-group-feedback form-group-feedback-left">
-								<input type="text" class="form-control" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Username">
+								<input type="text" class="form-control" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="{{'auth.username' | translate }}">
 								<div class="form-control-feedback">
 									<i class="icon-user text-muted"></i>
 								</div>
 								<div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-									<div *ngIf="f.username.errors.required">Username is required</div>
+									<div *ngIf="f.username.errors.required">{{'auth.username' | translate }} {{'auth.is' | translate }} {{'auth.required' | translate }}</div>
 								</div>
 							</div>
 
@@ -41,17 +41,17 @@
 									<i class="icon-lock2 text-muted"></i>
 								</div>
 								<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-									<div *ngIf="f.password.errors.required">Password is required</div>
+									<div *ngIf="f.password.errors.required">{{'auth.password' | translate }} {{'auth.is' | translate }} {{'auth.required' | translate }}</div>
 									<div *ngIf="f.password.errors.minlength">Password must be at least 5 characters</div>
 								</div>
 							</div>
 
 							<div class="form-group">
-								<button type="submit"  class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 ml-2"></i></button>
+								<button type="submit"  class="btn btn-primary btn-block">{{'auth.signin' | translate }} <i class="icon-circle-right2 ml-2"></i></button>
 							</div>
 
 							<div class="text-center">
-								<a href="login_password_recover.html">Forgot password?</a>
+								<a href="login_password_recover.html">{{'auth.forgot' | translate }} {{'auth.password' | translate }}?</a>
 							</div>
 						</div>
 					</div>
