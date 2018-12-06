@@ -13,6 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 
 import { AuthGuard } from './_guards';
+import { FooterComponent } from './footer/footer.component';
+import { UserProfileComponent } from './component/user-profile/user-profile.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +24,9 @@ import { AuthGuard } from './_guards';
     SidebarComponent,
     HomeComponent,
     LoginComponent,
+    FooterComponent,
+    UserProfileComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

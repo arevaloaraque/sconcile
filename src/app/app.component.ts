@@ -13,6 +13,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   // title = '';
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -28,6 +29,8 @@ export class AppComponent {
       })
       .filter(route => route.outlet === 'primary')
       .mergeMap(route => route.data)
-      .subscribe((event) => this.titleService.setTitle(event['title'] + ' - SConcile - LatAm Payment Group'));
+      .subscribe((event) =>
+        this.titleService.setTitle(event['title'] + ' - SConcile - LatAm Payment Group')
+      );
   }
 }
