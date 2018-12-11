@@ -10,7 +10,10 @@
         "summary":"Summary Sales"
     },
     "dashboard":{
-        "branch-offices":"Branch Offices"
+        "branch-offices":"Branch Offices",
+        "sales":"Sales",
+        "graphic":"Graphic",
+        "fertilizers":"fertilizers"
     },
     "auth":{
         "title":"Login to your account",

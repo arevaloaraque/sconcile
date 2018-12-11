@@ -10,7 +10,10 @@
         "summary":"Resumen Ventas"
     },
     "dashboard":{
-        "branch-offices":"sucursales"
+        "branch-offices":"sucursales",
+        "sales":"Ventas",
+        "graphic":"Grafico",
+        "fertilizers":"abonos"
     },
     "auth":{
         "title":"iniciar sesión en tu cuenta",
