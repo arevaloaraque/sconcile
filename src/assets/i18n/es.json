@@ -6,7 +6,11 @@
     "menu":{
         "home":"Casa",
         "dashboard":"Tablero",
-        "user-profile":"Usuario Perfil"
+        "user-profile":"Usuario Perfil",
+        "summary":"Resumen Ventas"
+    },
+    "dashboard":{
+        "branch-offices":"sucursales"
     },
     "auth":{
         "title":"iniciar sesión en tu cuenta",

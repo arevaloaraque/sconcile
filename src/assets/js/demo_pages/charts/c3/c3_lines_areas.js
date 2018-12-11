@@ -38,8 +38,8 @@ var С3LinesAreas = function() {
             // Generate chart
             var line_chart = c3.generate({
                 bindto: line_chart_element,
-                point: { 
-                    r: 4   
+                point: {
+                    r: 4
                 },
                 size: { height: 400 },
                 color: {
@@ -48,7 +48,9 @@ var С3LinesAreas = function() {
                 data: {
                     columns: [
                         ['data1', 30, 200, 100, 400, 150, 250],
-                        ['data2', 50, 20, 10, 40, 15, 25]
+                        ['data2', 50, 20, 10, 40, 15, 25],
+                        ['data3', 30, 250, 150, 450, 250, 350],
+                        ['data4', 55, 25, 15, 45, 20, 30]
                     ],
                     type: 'spline'
                 },
@@ -102,8 +104,10 @@ var С3LinesAreas = function() {
                 data: {
                     columns: [
                         ['data1', 30, 200, 100, 400, 150, 250],
-                        ['data2', 50, 20, 10, 40, 15, 25]
-                    ],
+                        ['data2', 50, 20, 10, 40, 15, 25],
+                        ['data3', 30, 250, 150, 450, 250, 350],
+                        ['data4', 55, 25, 15, 45, 20, 30]
+                  ],
                     regions: {
                         'data1': [{'start':1, 'end':2, 'style':'dashed'},{'start':3}],
                         'data2': [{'end':3}]
@@ -138,7 +142,9 @@ var С3LinesAreas = function() {
                 data: {
                     columns: [
                         ['data1', 300, 350, 300, 0, 0, 0],
-                        ['data2', 130, 100, 140, 200, 150, 50]
+                        ['data2', 130, 100, 140, 200, 150, 50],
+                        ['data3', 30, 200, 100, 400, 150, 250],
+                        ['data4', 50, 20, 10, 40, 15, 25]
                     ],
                     types: {
                         data1: 'area-spline',
@@ -173,14 +179,18 @@ var С3LinesAreas = function() {
                 },
                 data: {
                     columns: [
-                        ['data1', 300, 350, 300, 0, 0, 120],
-                        ['data2', 130, 100, 140, 200, 150, 50]
+                        ['data1', 300, 350, 300, 0, 0, 0],
+                        ['data2', 130, 100, 140, 200, 150, 50],
+                        ['data3', 30, 200, 100, 400, 150, 250],
+                        ['data4', 50, 20, 10, 40, 15, 25]
                     ],
                     types: {
                         data1: 'area-spline',
-                        data2: 'area-spline'
+                        data2: 'area-spline',
+                        data3: 'area-spline',
+                        data4: 'area-spline'
                     },
-                    groups: [['data1', 'data2']]
+                    groups: [['data1', 'data2','data3', 'data4']]
                 },
                 grid: {
                     y: {
@@ -207,8 +217,10 @@ var С3LinesAreas = function() {
                 },
                 data: {
                     columns: [
-                        ['data1', 300, 350, 300, 0, 0, 100],
-                        ['data2', 130, 100, 140, 200, 150, 50]
+                        ['data1', 300, 350, 300, 0, 0, 0],
+                        ['data2', 130, 100, 140, 200, 150, 50],
+                        ['data3', 30, 200, 100, 400, 150, 250],
+                        ['data4', 50, 20, 10, 40, 15, 25]
                     ],
                     types: {
                         data1: 'step',
