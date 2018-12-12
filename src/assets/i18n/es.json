@@ -12,6 +12,9 @@
     "dashboard":{
         "branch-offices":"sucursales",
         "sales":"Ventas",
+        "fee":"Fee",
+        "collect":"Por Cobrar",
+        "charged":"Cobrados",
         "graphic":"Grafico",
         "fertilizers":"abonos"
     },

@@ -12,8 +12,12 @@
     "dashboard":{
         "branch-offices":"Branch Offices",
         "sales":"Sales",
+        "fee":"Fee",
+        "collect":"Collect",
+        "charged":"Charged",
         "graphic":"Graphic",
         "fertilizers":"fertilizers"
+
     },
     "auth":{
         "title":"Login to your account",
