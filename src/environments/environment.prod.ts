@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  sconcile_service:"https://devsconcile.apps-lapaymentgroup.com"
+  sconcile_service:"https://devsconcileservice.apps-lapaymentgroup.com"
 };
 // --configuration=production
