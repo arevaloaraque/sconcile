@@ -6,6 +6,7 @@ import { AuthGuard } from './_guards';
 
 import { UserProfileComponent } from './component/user-profile/user-profile.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { TransactionsComponent } from './component/transactions/transactions.component';
 
 const routes: Routes = [
   { path: 'login',component:LoginComponent,data: { title: 'Login' } },
@@ -20,7 +21,11 @@ const routes: Routes = [
       },
       {
         path: 'userprofile', component: UserProfileComponent ,data: { title: 'Profile' }
+      },
+      {
+        path: 'transactions', component: TransactionsComponent ,data: { title: 'Transactions' }
       }
+
     ]
   },
   // { path: 'home', component: HomeComponent ,canActivate: [AuthGuard],data: { title: 'Home' } },

@@ -7,7 +7,8 @@
         "home":"Casa",
         "dashboard":"Tablero",
         "user-profile":"Usuario Perfil",
-        "summary":"Resumen Ventas"
+        "summary":"Resumen Ventas",
+        "transactions":"Listado de Ventas"
     },
     "dashboard":{
         "branch-offices":"sucursales",

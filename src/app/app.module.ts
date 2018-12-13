@@ -19,6 +19,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TransactionsComponent } from './component/transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
     FooterComponent,
     UserProfileComponent,
     DashboardComponent,
+    TransactionsComponent,
   ],
   imports: [
     BrowserModule,

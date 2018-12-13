@@ -7,7 +7,8 @@
         "home":"Home",
         "dashboard":"Dashboard",
         "user-profile":"User Profile",
-        "summary":"Summary Sales"
+        "summary":"Summary Sales",
+        "transactions":"Sales Listing"
     },
     "dashboard":{
         "branch-offices":"Branch Offices",
