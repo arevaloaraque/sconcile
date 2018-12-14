@@ -1,0 +1,4810 @@
+{
+    "items": [
+        {
+            "id": "0d4f1b17-0bdf-4ebe-86b7-8317a8ba4b5b",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 107982,
+            "auth_code": "587187",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 6,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "587187",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000107982.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "29378",
+                    "l4_agencia": "",
+                    "l4_horatef": "193855",
+                    "l4_numcart": "003971",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e3a0651f-d073-443b-abbc-e42a9ddacec9",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 44990,
+            "auth_code": "183739",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 10,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "183739",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000044990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "29347",
+                    "l4_agencia": "",
+                    "l4_horatef": "114703",
+                    "l4_numcart": "003950",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "022ecfe9-1851-44b8-9c81-f27359cdc12f",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 22990,
+            "auth_code": "004607 ",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 15,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004607 ",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000022990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29348",
+                    "l4_agencia": "",
+                    "l4_horatef": "122205",
+                    "l4_numcart": "003951",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "554dd19f-c174-4a56-9d80-6c529aad375d",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 42990,
+            "auth_code": "004608",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 16,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004608",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000042990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29348",
+                    "l4_agencia": "",
+                    "l4_horatef": "122205",
+                    "l4_numcart": "003952",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "c7f539b4-63cb-4b29-a0ed-89f49c4d0249",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 24990,
+            "auth_code": "430095",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 20,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "430095",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000024990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "29349",
+                    "l4_agencia": "",
+                    "l4_horatef": "130838",
+                    "l4_numcart": "003953",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "15545cbc-b616-4754-95ff-f1633b3d456d",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "004610",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 24,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004610",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29350",
+                    "l4_agencia": "",
+                    "l4_horatef": "133646",
+                    "l4_numcart": "003954",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ee0db086-3207-4a30-9fd9-bb15ddf5022e",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004611",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 28,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004611",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29351",
+                    "l4_agencia": "",
+                    "l4_horatef": "134913",
+                    "l4_numcart": "003955",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "0eb26994-6a33-4c7e-b8cd-5c312d8e0b90",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 76980,
+            "auth_code": "004612",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 33,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004612",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000076980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29352",
+                    "l4_agencia": "",
+                    "l4_horatef": "141457",
+                    "l4_numcart": "003956",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "438a5d16-6ef5-4859-a325-0c5b03ec6d2e",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "581164",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 37,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "581164",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "29353",
+                    "l4_agencia": "",
+                    "l4_horatef": "151505",
+                    "l4_numcart": "003957",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "76b240cc-74ed-43df-aa72-52cee73c9fad",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 16990,
+            "auth_code": "004614",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 41,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004614",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000016990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29354",
+                    "l4_agencia": "",
+                    "l4_horatef": "152631",
+                    "l4_numcart": "003958",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e0a85b4d-2df6-4712-a2c9-8905914cc4d1",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004615",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 49,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004615",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29356",
+                    "l4_agencia": "",
+                    "l4_horatef": "155018",
+                    "l4_numcart": "003959",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "af5ac75b-f360-42da-91b3-1f6c65c18070",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 27990,
+            "auth_code": "004616",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 53,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004616",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000027990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29357",
+                    "l4_agencia": "",
+                    "l4_horatef": "155823",
+                    "l4_numcart": "003960",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e0a8c4b6-b11d-42a6-83fe-9996b4071aca",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "981951",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 61,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "981951",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29359",
+                    "l4_agencia": "",
+                    "l4_horatef": "161624",
+                    "l4_numcart": "003961",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "754e57f2-34fb-471f-aa91-e7938c1ed393",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 67980,
+            "auth_code": "384455",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 66,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "384455",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000067980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "29360",
+                    "l4_agencia": "",
+                    "l4_horatef": "163805",
+                    "l4_numcart": "003962",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "56c18505-7038-45d6-9076-59cff2d9fd34",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 52980,
+            "auth_code": "603025",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 71,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "603025",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000052980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "29361",
+                    "l4_agencia": "",
+                    "l4_horatef": "164138",
+                    "l4_numcart": "003963",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "3c362e58-9c64-4f7b-bc4d-8766fd371730",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "007139",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 75,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "007139",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29362",
+                    "l4_agencia": "",
+                    "l4_horatef": "164613",
+                    "l4_numcart": "005746",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "4c956787-da83-41f9-be33-4077598b47c1",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "007140",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 79,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "007140",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29363",
+                    "l4_agencia": "",
+                    "l4_horatef": "165030",
+                    "l4_numcart": "005747",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "cce212e9-ccd3-4447-94f9-5e2e124ae4e1",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 35990,
+            "auth_code": "004621",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 88,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004621",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000035990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29366",
+                    "l4_agencia": "",
+                    "l4_horatef": "172402",
+                    "l4_numcart": "003964",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "11947f35-1f19-4719-b0ad-1804deaa98b4",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 114980,
+            "auth_code": "993062",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 93,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "993062",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000114980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "29367",
+                    "l4_agencia": "",
+                    "l4_horatef": "175507",
+                    "l4_numcart": "003965",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "18bf13fd-6675-406b-8550-d965ca8d0250",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "827261",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 97,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "827261",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29368",
+                    "l4_agencia": "",
+                    "l4_horatef": "175824",
+                    "l4_numcart": "003966",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b2202558-a356-4e6d-a1f0-eeaa3fb61f67",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 14990,
+            "auth_code": "449425",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 114,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "449425",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000014990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "29372",
+                    "l4_agencia": "",
+                    "l4_horatef": "182856",
+                    "l4_numcart": "003967",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b225cc60-b8ee-441b-9de1-a4dd57557cf3",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "004625",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 122,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004625",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29374",
+                    "l4_agencia": "",
+                    "l4_horatef": "183905",
+                    "l4_numcart": "003968",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "415fbd79-932a-430e-9424-d8f37b526848",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 42990,
+            "auth_code": "822845",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 132,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "822845",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000042990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "29376",
+                    "l4_agencia": "",
+                    "l4_horatef": "191400",
+                    "l4_numcart": "003969",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "f3d55f1a-51a5-46e6-b3d0-4d4e8dc9799f",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 6990,
+            "auth_code": "634085",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 136,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "634085",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000006990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29377",
+                    "l4_agencia": "",
+                    "l4_horatef": "192250",
+                    "l4_numcart": "003970",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "d6091eb4-3335-4521-9bca-fb5f26fb10b2",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "004630",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 140,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004630",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29379",
+                    "l4_agencia": "",
+                    "l4_horatef": "200625",
+                    "l4_numcart": "003972",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "a9cdb5be-3ce1-4286-98bf-81d4e3a523f8",
+            "sale_date": "2018-08-26T21:00:00-03:00",
+            "amount": 58000,
+            "auth_code": "312966",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 145,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "312966",
+                    "fecha": "20180827",
+                    "l4_rg": "",
+                    "monto": "000000058000.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "29382",
+                    "l4_agencia": "",
+                    "l4_horatef": "205013",
+                    "l4_numcart": "005748",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "750460b3-66db-465d-ad92-225d41c5360a",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 213960,
+            "auth_code": "301837",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 7,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "301837",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000213960.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28690",
+                    "l4_agencia": "",
+                    "l4_horatef": "133755",
+                    "l4_numcart": "005625",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "53093e9c-47f2-4a13-8cd9-0c93fae88757",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 47980,
+            "auth_code": "705484",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 17,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "705484",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000047980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28675",
+                    "l4_agencia": "",
+                    "l4_horatef": "114954",
+                    "l4_numcart": "003588",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ee1b7eb1-29ec-4879-85f1-75c24e59966e",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 22990,
+            "auth_code": "440926",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 21,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "440926",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000022990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28676",
+                    "l4_agencia": "",
+                    "l4_horatef": "115107",
+                    "l4_numcart": "003589",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "c9b6b5d8-c495-4a00-b2cb-dde0da8c0517",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 37980,
+            "auth_code": "004168",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 26,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004168",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000037980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28677",
+                    "l4_agencia": "",
+                    "l4_horatef": "120316",
+                    "l4_numcart": "003590",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "f449c152-6618-4ae3-9a63-8dc710d72c20",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 44990,
+            "auth_code": "768952",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 30,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "768952",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000044990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28678",
+                    "l4_agencia": "",
+                    "l4_horatef": "121129",
+                    "l4_numcart": "003591",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e67882f9-79f2-4137-b627-1acb46687862",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004170",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 34,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004170",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28679",
+                    "l4_agencia": "",
+                    "l4_horatef": "121321",
+                    "l4_numcart": "003592",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "0a7e8fcb-6cac-4ec4-9431-48420f6d45cd",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 114980,
+            "auth_code": "203026",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 39,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "203026",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000114980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28680",
+                    "l4_agencia": "",
+                    "l4_horatef": "122230",
+                    "l4_numcart": "003593",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "031723c9-9bc0-449b-8b2c-ad732c9867fa",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "548596",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 43,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "548596",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28681",
+                    "l4_agencia": "",
+                    "l4_horatef": "123054",
+                    "l4_numcart": "003594",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "4fd819a6-ed88-45e9-8246-d476c5882ebe",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 70980,
+            "auth_code": "565369",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 52,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "565369",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000070980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "AME",
+                    "l4_conta": "",
+                    "gp_numero": "28683",
+                    "l4_agencia": "",
+                    "l4_horatef": "124420",
+                    "l4_numcart": "003595",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "093e3003-593f-49cd-ad0e-3b7eb61e1373",
+                "name": "AMEX",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "f74eb9db-4b40-4fde-a2d1-264c0b427f03",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "973224",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 56,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "973224",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28684",
+                    "l4_agencia": "",
+                    "l4_horatef": "130230",
+                    "l4_numcart": "003596",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "2ddbe605-af2e-41e5-a43e-a5ff0a939e2f",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 45480,
+            "auth_code": "552810",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 61,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "552810",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000045480.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28685",
+                    "l4_agencia": "",
+                    "l4_horatef": "130639",
+                    "l4_numcart": "003597",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "fdbcf702-7f9f-49e9-ba66-7b1d77f185ab",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "826774",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 65,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "826774",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28686",
+                    "l4_agencia": "",
+                    "l4_horatef": "131336",
+                    "l4_numcart": "003598",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "a9b7a76c-e94b-4413-92d8-91b13c2b8bff",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 95970,
+            "auth_code": "587700",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 71,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "587700",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000095970.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28687",
+                    "l4_agencia": "",
+                    "l4_horatef": "132131",
+                    "l4_numcart": "003599",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "bf79375b-0077-4888-8a11-f71d795ca6b8",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 42990,
+            "auth_code": "004180",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 75,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004180",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000042990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28688",
+                    "l4_agencia": "",
+                    "l4_horatef": "132528",
+                    "l4_numcart": "003600",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "6459b56c-86b6-4b1f-8304-9190bffda283",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 62370,
+            "auth_code": "881965",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 81,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "881965",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000062370.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28689",
+                    "l4_agencia": "",
+                    "l4_horatef": "133706",
+                    "l4_numcart": "003601",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "04c8f61f-f228-40cd-88d3-a93ef771da21",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 19990,
+            "auth_code": "401858",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 86,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "401858",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000019990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28691",
+                    "l4_agencia": "",
+                    "l4_horatef": "134120",
+                    "l4_numcart": "003602",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "d68c4ddd-ea90-4da5-9ba9-a91e95dc311a",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 17980,
+            "auth_code": "838877",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 92,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "838877",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000017980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28692",
+                    "l4_agencia": "",
+                    "l4_horatef": "134546",
+                    "l4_numcart": "003603",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "7cb2a661-f003-4750-8f8c-1884af321ccc",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "984910",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 96,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "984910",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28693",
+                    "l4_agencia": "",
+                    "l4_horatef": "134644",
+                    "l4_numcart": "005626",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "3bbece30-6ae9-4c9c-bb18-40fcc534a91a",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 6000,
+            "auth_code": "231602",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 101,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "231602",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000006000.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28695",
+                    "l4_agencia": "",
+                    "l4_horatef": "135047",
+                    "l4_numcart": "003604",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "001e4ba7-4d71-471c-86b9-381c3a57a276",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 15990,
+            "auth_code": "181099",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 110,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "181099",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000015990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28697",
+                    "l4_agencia": "",
+                    "l4_horatef": "140647",
+                    "l4_numcart": "003605",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "6c00759c-fa6f-4a7d-ab76-2f96e6c22dad",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 62980,
+            "auth_code": "614009",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 115,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "614009",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000062980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28698",
+                    "l4_agencia": "",
+                    "l4_horatef": "141106",
+                    "l4_numcart": "003606",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "2ef9aabe-1efd-4d18-8878-724e7e874f04",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 33990,
+            "auth_code": "536195",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 119,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "536195",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000033990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "AME",
+                    "l4_conta": "",
+                    "gp_numero": "28699",
+                    "l4_agencia": "",
+                    "l4_horatef": "141742",
+                    "l4_numcart": "003607",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "093e3003-593f-49cd-ad0e-3b7eb61e1373",
+                "name": "AMEX",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b935354c-3519-418b-a5c6-f020afc08f0b",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 42990,
+            "auth_code": "943074",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 123,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "943074",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000042990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28700",
+                    "l4_agencia": "",
+                    "l4_horatef": "142003",
+                    "l4_numcart": "003608",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "120deeea-b076-4bcc-a865-9106a3517878",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "624845",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 127,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "624845",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28701",
+                    "l4_agencia": "",
+                    "l4_horatef": "143423",
+                    "l4_numcart": "003609",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "6fc3f788-7f08-41a5-ad84-1820bd298088",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "340834",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 131,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "340834",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28702",
+                    "l4_agencia": "",
+                    "l4_horatef": "144029",
+                    "l4_numcart": "003610",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e694d5aa-9f88-4e0d-b063-d981234e5712",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004192",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 135,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004192",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28703",
+                    "l4_agencia": "",
+                    "l4_horatef": "151235",
+                    "l4_numcart": "003611",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "11b689b0-6897-4a84-9d32-f1d30bfb2d31",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 29990,
+            "auth_code": "892757",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 143,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "892757",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000029990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28706",
+                    "l4_agencia": "",
+                    "l4_horatef": "153021",
+                    "l4_numcart": "005627",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "c949aa97-3401-4e4d-a3a3-aec0e5d9feb0",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 109980,
+            "auth_code": "006983",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 148,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006983",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000109980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28707",
+                    "l4_agencia": "",
+                    "l4_horatef": "153201",
+                    "l4_numcart": "005628",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "3f663169-ced4-4e7a-b694-9ef89f0c0fe2",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 72980,
+            "auth_code": "782482",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 153,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "782482",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000072980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28708",
+                    "l4_agencia": "",
+                    "l4_horatef": "154347",
+                    "l4_numcart": "005629",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "28b470ab-8574-4f72-85ff-a69d257e7053",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 38990,
+            "auth_code": "004199",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 157,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004199",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000038990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28709",
+                    "l4_agencia": "",
+                    "l4_horatef": "155103",
+                    "l4_numcart": "003612",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "1eb85f82-c271-45d8-afe3-ebcdd5da4ba3",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "404684",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 165,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "404684",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28711",
+                    "l4_agencia": "",
+                    "l4_horatef": "155341",
+                    "l4_numcart": "003613",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e73b02a5-e3a3-46aa-a8b2-6afc40fb2283",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 44990,
+            "auth_code": "782724",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 173,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "782724",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000044990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28713",
+                    "l4_agencia": "",
+                    "l4_horatef": "155546",
+                    "l4_numcart": "005630",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "48ca19e0-a75e-4f61-b0cd-5866d2116b8f",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "123796",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 177,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "123796",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28714",
+                    "l4_agencia": "",
+                    "l4_horatef": "160650",
+                    "l4_numcart": "003614",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "790a1862-9b03-495d-82df-155a4cdd1304",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 35990,
+            "auth_code": "733905",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 183,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "733905",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000035990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28715",
+                    "l4_agencia": "",
+                    "l4_horatef": "160716",
+                    "l4_numcart": "005631",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b7271dd8-6027-41a6-85e8-f4374e18d633",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "321287",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 192,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "321287",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28717",
+                    "l4_agencia": "",
+                    "l4_horatef": "161934",
+                    "l4_numcart": "005632",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "060e7dc3-5267-46f4-a3f6-4b4acd9c4797",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "168799",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 196,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "168799",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28718",
+                    "l4_agencia": "",
+                    "l4_horatef": "162303",
+                    "l4_numcart": "003615",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "57f7df17-eacf-4bfe-afa8-03de9391a002",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "759910",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 200,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "759910",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28719",
+                    "l4_agencia": "",
+                    "l4_horatef": "163447",
+                    "l4_numcart": "003616",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b2027c35-fdc1-4726-9a7a-25ead85705d6",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "449420",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 204,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "449420",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28720",
+                    "l4_agencia": "",
+                    "l4_horatef": "164122",
+                    "l4_numcart": "003617",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ded526df-9bfb-4b88-ae78-b09b407d0d7f",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "004206",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 208,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004206",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28721",
+                    "l4_agencia": "",
+                    "l4_horatef": "164523",
+                    "l4_numcart": "003618",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "88029bae-fc23-4cd8-82e7-8d0af82d8b9e",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "006990",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 212,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006990",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28722",
+                    "l4_agencia": "",
+                    "l4_horatef": "165023",
+                    "l4_numcart": "005633",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "0d07f21f-73d0-4356-8637-d5ff8e0a7fa5",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 12990,
+            "auth_code": "004207",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 220,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004207",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000012990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28724",
+                    "l4_agencia": "",
+                    "l4_horatef": "165202",
+                    "l4_numcart": "003619",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "2cf61019-4309-4ac7-9d2b-8291a1f79316",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "534095",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 224,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "534095",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28725",
+                    "l4_agencia": "",
+                    "l4_horatef": "165312",
+                    "l4_numcart": "005634",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "e9a33139-7aeb-4171-9388-d4aebce983f5",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 11990,
+            "auth_code": "059053",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 228,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "059053",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000011990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28726",
+                    "l4_agencia": "",
+                    "l4_horatef": "165657",
+                    "l4_numcart": "003620",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "62c958ad-27f5-4ab0-9ee3-56ce4dd9276d",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004209",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 232,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004209",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28727",
+                    "l4_agencia": "",
+                    "l4_horatef": "165935",
+                    "l4_numcart": "003621",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "d7c770df-8449-4b51-93ae-e421939bbd45",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 59990,
+            "auth_code": "006992",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 236,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006992",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000059990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28728",
+                    "l4_agencia": "",
+                    "l4_horatef": "170024",
+                    "l4_numcart": "005635",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "36d6dc79-8c16-45c4-9cd1-8829bb6cefb7",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 33990,
+            "auth_code": "410361",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 244,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "410361",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000033990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28730",
+                    "l4_agencia": "",
+                    "l4_horatef": "170331",
+                    "l4_numcart": "005636",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "9028997c-9fce-47db-8a07-046270d9e9dd",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "481176",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 248,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "481176",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28731",
+                    "l4_agencia": "",
+                    "l4_horatef": "171243",
+                    "l4_numcart": "003622",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "0819924f-b567-4ee5-becd-5abc71eac98c",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004211",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 252,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004211",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28732",
+                    "l4_agencia": "",
+                    "l4_horatef": "171539",
+                    "l4_numcart": "003623",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ac385a0f-4e9f-477b-848a-cfb75e00c960",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 5000,
+            "auth_code": "006994",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 257,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006994",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000005000.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28734",
+                    "l4_agencia": "",
+                    "l4_horatef": "171848",
+                    "l4_numcart": "005637",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "274bac7e-953f-4ba0-88ac-74c2134c94e9",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 49980,
+            "auth_code": "004212",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 262,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004212",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000049980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28735",
+                    "l4_agencia": "",
+                    "l4_horatef": "172529",
+                    "l4_numcart": "003624",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "013522d1-dea9-48cd-a262-9301eb127118",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "826792",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 270,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "826792",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28737",
+                    "l4_agencia": "",
+                    "l4_horatef": "173016",
+                    "l4_numcart": "003625",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ee55a9f1-742e-4d35-b606-956e26f8b60a",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "004214",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 274,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004214",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28738",
+                    "l4_agencia": "",
+                    "l4_horatef": "173251",
+                    "l4_numcart": "003626",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "7cc63be1-7cac-4a9b-8ecf-09c5072d20a8",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 55480,
+            "auth_code": "173495",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 279,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "173495",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000055480.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28739",
+                    "l4_agencia": "",
+                    "l4_horatef": "173501",
+                    "l4_numcart": "003627",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "7e0225c8-6f4d-40ff-b728-6efd98bd6433",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34980,
+            "auth_code": "887583",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 292,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "887583",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28742",
+                    "l4_agencia": "",
+                    "l4_horatef": "173759",
+                    "l4_numcart": "003628",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "13970c9a-c64c-43ca-b0e6-2937748e497a",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 195410,
+            "auth_code": "782374",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 312,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "782374",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000195410.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28745",
+                    "l4_agencia": "",
+                    "l4_horatef": "174757",
+                    "l4_numcart": "005638",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "6ad4e606-bdce-4608-9701-7c1d86c679d2",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 9594,
+            "auth_code": "004217",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 316,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004217",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000009594.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28746",
+                    "l4_agencia": "",
+                    "l4_horatef": "174930",
+                    "l4_numcart": "003629",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "b2dc375b-c879-478a-a705-30f5d0bd37bc",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "029565",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 320,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "029565",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28747",
+                    "l4_agencia": "",
+                    "l4_horatef": "175551",
+                    "l4_numcart": "003630",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "32f52f13-4f48-4f53-8a13-5e26d8386ec0",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "528628",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 324,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "528628",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28748",
+                    "l4_agencia": "",
+                    "l4_horatef": "175705",
+                    "l4_numcart": "003631",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "9e0a3fe7-322d-4571-9717-462d6ca4ccee",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 52990,
+            "auth_code": "116558",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 332,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "116558",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000052990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28750",
+                    "l4_agencia": "",
+                    "l4_horatef": "180653",
+                    "l4_numcart": "003632",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "7aa65040-65bb-4ab4-a3b6-218e6ab073a3",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 54990,
+            "auth_code": "257995",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 336,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "257995",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000054990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28751",
+                    "l4_agencia": "",
+                    "l4_horatef": "180815",
+                    "l4_numcart": "005639",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "2e0d0f7d-b07c-4880-9f29-737f589849a8",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "177291",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 340,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "177291",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28752",
+                    "l4_agencia": "",
+                    "l4_horatef": "181444",
+                    "l4_numcart": "003633",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "ec6efe3c-31fb-4de2-8dfa-05102314ee44",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 34990,
+            "auth_code": "220649",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 344,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "220649",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000034990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28753",
+                    "l4_agencia": "",
+                    "l4_horatef": "182114",
+                    "l4_numcart": "003635",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "def0071d-c644-4ed1-95eb-e379a0daedc3",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 10000,
+            "auth_code": "233503",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 345,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "233503",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000010000.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28753",
+                    "l4_agencia": "",
+                    "l4_horatef": "182114",
+                    "l4_numcart": "003634",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "9bc33422-af01-4507-8738-be720a0576f0",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 39990,
+            "auth_code": "062524",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 353,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "062524",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000039990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28755",
+                    "l4_agencia": "",
+                    "l4_horatef": "183032",
+                    "l4_numcart": "003636",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "cf84daf6-0fd2-4bac-b7c0-79066c6a0a16",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 19990,
+            "auth_code": "004226",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 357,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004226",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000019990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28756",
+                    "l4_agencia": "",
+                    "l4_horatef": "184120",
+                    "l4_numcart": "003637",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "7fd7c3ab-e461-4f08-8c65-4113c05f5fc7",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 42990,
+            "auth_code": "004227",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 361,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004227",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000042990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28757",
+                    "l4_agencia": "",
+                    "l4_horatef": "184349",
+                    "l4_numcart": "003638",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "030b3f9d-5054-4284-94d9-61fe610dd5b8",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 14990,
+            "auth_code": "618610",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 365,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "618610",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000014990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28758",
+                    "l4_agencia": "",
+                    "l4_horatef": "184955",
+                    "l4_numcart": "003639",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "62e7d8a1-9c11-45c3-8bb9-776a0e9fbc15",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 35990,
+            "auth_code": "713397",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 369,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "713397",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000035990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "MAS",
+                    "l4_conta": "",
+                    "gp_numero": "28759",
+                    "l4_agencia": "",
+                    "l4_horatef": "185104",
+                    "l4_numcart": "005640",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "34d03312-a79e-4e57-a8a6-ddb1d7368a52",
+                "name": "MASTERCARD",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "76be09f4-a6ea-4e4d-88f5-2809a7e28749",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 13990,
+            "auth_code": "489920",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 373,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "489920",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000013990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28760",
+                    "l4_agencia": "",
+                    "l4_horatef": "185151",
+                    "l4_numcart": "003640",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "9658cfad-668f-41af-991f-f42242f11a18",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 64990,
+            "auth_code": "006998",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 377,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006998",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000064990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28761",
+                    "l4_agencia": "",
+                    "l4_horatef": "190045",
+                    "l4_numcart": "005641",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "692647fe-87a0-4ae7-9436-57ef150ba57e",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 71980,
+            "auth_code": "006999",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 382,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "006999",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000071980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28762",
+                    "l4_agencia": "",
+                    "l4_horatef": "191007",
+                    "l4_numcart": "005642",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "8fe355d6-e9f6-4c05-b721-002dee8fbdc8",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 44990,
+            "auth_code": "007000",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 386,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "007000",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000044990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28763",
+                    "l4_agencia": "",
+                    "l4_horatef": "191156",
+                    "l4_numcart": "005643",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "4bc65482-2e2a-4b75-8436-e674526757c4",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 35990,
+            "auth_code": "005869",
+            "sale_type": {
+                "id": "6e65400b-25d1-40f1-a5a3-62529e2a3234",
+                "name": "TARJETA DE CRÉDITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 390,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "005869",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000035990.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "VIS",
+                    "l4_conta": "",
+                    "gp_numero": "28764",
+                    "l4_agencia": "",
+                    "l4_horatef": "191316",
+                    "l4_numcart": "005644",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TCR"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "5aef24c2-64fb-4e08-b11e-5bf39c9e3325",
+                "name": "VISA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        },
+        {
+            "id": "1b2e645c-a895-4a8a-abb5-dbecf0d3ccc6",
+            "sale_date": "2018-08-17T21:00:00-03:00",
+            "amount": 65980,
+            "auth_code": "004230",
+            "sale_type": {
+                "id": "e8b6e607-a706-4c7a-9865-32754f98c1a5",
+                "name": "TARJETA DE DÉBITO",
+                "storage_settings": null
+            },
+            "extras": {
+                "parsed_data_index": 395,
+                "raw_original_data": {
+                    "k_1": "000000000000000000000000000001",
+                    "k_2": "1",
+                    "auth": "004230",
+                    "fecha": "20180818",
+                    "l4_rg": "",
+                    "monto": "000000065980.00",
+                    "l4_obs": "ESTA ES OBS_NF",
+                    "tarjeta": "RED",
+                    "l4_conta": "",
+                    "gp_numero": "28765",
+                    "l4_agencia": "",
+                    "l4_horatef": "191326",
+                    "l4_numcart": "003641",
+                    "l4_telefon": "",
+                    "tipo_deventa": "TDE"
+                }
+            },
+            "company": "69551248-88e4-428b-8863-4daf53f7ecc0",
+            "branch": null,
+            "currency": {
+                "id": "5882427f-22d1-4d34-8a3f-5b3ac45f7e3b",
+                "name": "Pesos Chilenos",
+                "code": "CLP"
+            },
+            "sale_method": {
+                "id": "cbff3cea-4ae4-4578-84c4-3b004401c739",
+                "name": "REDCOMPRA",
+                "storage_settings": null
+            },
+            "status": {
+                "id": "e635eef0-3270-41e2-b50c-8a98fa442335",
+                "name": "NO CONCILIADA"
+            },
+            "payment_content_type": null
+        }
+    ],
+    "paginate": {
+        "page": 1,
+        "totalItems": 1749,
+        "itemsPerPage": 100,
+        "num_pages": 18
+    }
+}

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+// transaction
+import {ServiceService} from '../../service.service';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-transactions',
@@ -7,15 +11,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private apiservice:ServiceService,
+    private http:HttpClient
+  ) { }
   // transactions:[Object];
+  items;
 
   ngOnInit() {
-    // this.transactions= [
-    //   {id: 1, firstname: 'Mary', lastname: 'Taylor', age: 24},
-    //   {id: 2, firstname: 'Peter', lastname: 'Smith', age: 18},
-    //   {id: 3, firstname: 'Lauren', lastname: 'Taylor', age: 31}
-    // ];
-  }
+    this.getJSON().subscribe(data => {
+      console.log(data)
+      this.items=data.items;
+    });
+
+    // this.apiservice.transaction()
+    // .subscribe(
+    //   data => {
+    //     console.log('data',data);
+    //   },
+    //   error => {
+    //       console.log('Error',error);
+    //   });
+
+    }
+
+    public getJSON(): Observable<any> {
+      return this.http.get("./assets/response.json")
+    }
 
 }

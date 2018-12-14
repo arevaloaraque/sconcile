@@ -33,6 +33,8 @@ export class ServiceService {
             if (user && user.token) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('currentUser', JSON.stringify(user));
+              localStorage.setItem('token', user.token);
+
             }
 
           return user;
@@ -41,6 +43,25 @@ export class ServiceService {
   logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
+    localStorage.removeItem('token');
+
+  }
+
+  transaction(){
+    //
+    let httpHeaders = new HttpHeaders({
+      'Content-Type' : 'application/json',
+      'Authorization': 'LGP '+localStorage.getItem('token')
+    });
+    let options = {
+      headers: httpHeaders
+    };
+
+    return this.httpClient.post<any>(
+      this.api+"/sales",
+        options).pipe(map(data=>{
+           return data;
+        }))
   }
 
 }
