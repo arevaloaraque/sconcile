@@ -5,7 +5,7 @@
     },
     "menu":{
         "home":"Casa",
-        "dashboard":"Tablero",
+        "dashboard":"Dashboard",
         "user-profile":"Usuario Perfil",
         "summary":"Resumen Ventas",
         "transactions":"Listado de Ventas"

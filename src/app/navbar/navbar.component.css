@@ -1,5 +1,6 @@
-.navbar-brand {
-    min-width: 12.625rem !important;
+.navbar-logo {
+    min-width: 14.625rem !important;
+    padding-left: 71px;
 }
 p{
     margin-top: 17px;
