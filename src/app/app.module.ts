@@ -3,7 +3,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule,FormsModule }    from '@angular/forms';
-import { FilterPipeModule } from 'ngx-filter-pipe';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { GrdFilterPipe } from './filter.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,14 +36,15 @@ import { TransactionsComponent } from './component/transactions/transactions.com
     UserProfileComponent,
     DashboardComponent,
     TransactionsComponent,
+    GrdFilterPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FilterPipeModule,
     ToastrModule.forRoot(),
     HttpClientModule,
     FormsModule,
+    NgxPaginationModule,
     ReactiveFormsModule,
     AppRoutingModule,
     NgxSpinnerModule,

@@ -24,7 +24,7 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "chart.js": "^2.7.3",
     "core-js": "^2.5.4",
-    "ngx-filter-pipe": "^2.1.2",
+    "ngx-pagination": "^3.2.1",
     "ngx-spinner": "^6.1.2",
     "ngx-toastr": "^9.1.1",
     "rxjs": "^6.2.2",
