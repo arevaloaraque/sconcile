@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule }    from '@angular/forms';
+import { ReactiveFormsModule,FormsModule }    from '@angular/forms';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToastrModule } from 'ngx-toastr';
@@ -10,6 +12,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
+
 import { LoginComponent } from './auth/login/login.component';
 
 import { AuthGuard } from './_guards';
@@ -36,8 +39,10 @@ import { TransactionsComponent } from './component/transactions/transactions.com
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FilterPipeModule,
     ToastrModule.forRoot(),
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     NgxSpinnerModule,
@@ -47,7 +52,7 @@ import { TransactionsComponent } from './component/transactions/transactions.com
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
-  })
+    })
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

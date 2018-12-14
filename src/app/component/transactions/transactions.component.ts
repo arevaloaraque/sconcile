@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import {ServiceService} from '../../service.service';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-transactions',
   templateUrl: './transactions.component.html',
@@ -17,21 +16,23 @@ export class TransactionsComponent implements OnInit {
   ) { }
   // transactions:[Object];
   items;
-
+  filterData;
+  userFilter: any = { auth_code: '' , amount:''};
   ngOnInit() {
     this.getJSON().subscribe(data => {
       console.log(data)
       this.items=data.items;
+      this.filterData=data.items;
     });
 
-    // this.apiservice.transaction()
-    // .subscribe(
-    //   data => {
-    //     console.log('data',data);
-    //   },
-    //   error => {
-    //       console.log('Error',error);
-    //   });
+    this.apiservice.transaction()
+    .subscribe(
+      data => {
+        console.log('data',data);
+      },
+      error => {
+          console.log('Error',error);
+      });
 
     }
 
@@ -39,4 +40,14 @@ export class TransactionsComponent implements OnInit {
       return this.http.get("./assets/response.json")
     }
 
+    search(term) {
+      if(!term) {
+        this.items = this.filterData;
+      } else {
+        this.items = this.filterData.filter(x =>
+          // console.log('x',x)
+           x.auth_code.trim().toLowerCase().includes(term.trim().toLowerCase())
+        );
+      }
+    }
 }
