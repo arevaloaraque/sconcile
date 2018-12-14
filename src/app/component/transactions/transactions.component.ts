@@ -17,7 +17,7 @@ export class TransactionsComponent implements OnInit {
   // transactions:[Object];
   items;
   filterData;
-  userFilter: any = { auth_code: '' , amount:''};
+  userFilter: any = { auth_code: '' };
   ngOnInit() {
     this.getJSON().subscribe(data => {
       console.log(data)

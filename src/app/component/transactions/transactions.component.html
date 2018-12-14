@@ -57,17 +57,20 @@
             </div> -->
 
             <!-- (keyup)='search($event.target.value)' -->
-            <input type="text" class="form-control input-sm" [(ngModel)]="userFilter.auth_code" placeholder="Search" />
-
+            <div class="card-header header-elements-inline row">
+              <div class="col-lg-3">
+                <input type="text" class="form-control input-sm" [(ngModel)]="userFilter.auth_code" placeholder="Search" />
+              </div>
+            </div>
             <table class="table datatable-selection-single">
                 <thead>
                     <tr>
                         <th>Código de Autorización</th>
-                        <th>Amount</th>
-                        <th>Sale date</th>
-                        <th>Sale type</th>
-                        <th>Status</th>
-                        <th>Sale method</th>
+                        <th>Monto</th>
+                        <th>Fecha Venta</th>
+                        <th>Método de pago</th>
+                        <th>estado</th>
+                        <th>Método de pago</th>
                         <!-- class="text-center" -->
                       </tr>
                 </thead>
