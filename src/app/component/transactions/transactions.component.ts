@@ -20,6 +20,8 @@ export class TransactionsComponent implements OnInit {
   userFilter ={  auth_code: '' };
   searchText : string;
   p: number = 1;
+  pageSize:number=10;
+
   ngOnInit() {
     this.getJSON().subscribe(data => {
       console.log(data)
@@ -51,5 +53,9 @@ export class TransactionsComponent implements OnInit {
            x.auth_code.trim().toLowerCase().includes(term.trim().toLowerCase())
         );
       }
+    }
+
+    totalPerPage(page){
+      this.pageSize=page;
     }
 }
