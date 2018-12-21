@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  sconcile_service:"http://127.0.0.1:8000"
+  sconcile_service:"https://devsconcileservice.apps-lapaymentgroup.com"
 };
 // --configuration=dev
