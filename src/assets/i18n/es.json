@@ -21,12 +21,12 @@
     },
     "auth":{
         "title":"iniciar sesión en tu cuenta",
-        "subtitle":"Entrar tu cartas credenciales abajo",
+        "subtitle":"",
         "username":"nombre de usuario",
         "is":"es",
         "required":"necesario",
         "password":"contraseña",
-        "signin":"Registrarse",
+        "signin":"Iniciar sesión",
         "forgot":"Olvidó"
     }
 }

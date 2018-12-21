@@ -41,7 +41,6 @@ export class LoginComponent implements OnInit {
   get f() { return this.loginForm.controls; }
 
   loginMe(){
-    console.log('login me');
     this.submitted = true;
     // stop here if form is invalid
     if (this.loginForm.invalid) {
@@ -50,17 +49,16 @@ export class LoginComponent implements OnInit {
     this.spinner.show();
 
     this.apiservice.login(this.f.username.value, this.f.password.value)
-    .pipe(first())
-    .subscribe(
-      data => {
-        this.toastrService.success('Login successfully!');
-        this.router.navigate(['/home']);
-      },
-      error => {
-          console.log('Error',error);
-          this.toastrService.error('Login error!');
-          this.spinner.hide();
-      });
+      .pipe(first())
+      .subscribe(
+        data => {
+          this.toastrService.success('Login successfully!');
+          this.router.navigate(['/home']);
+        },
+        error => {
+            this.toastrService.error('Login error!');
+            this.spinner.hide();
+        });
     }
 }
 

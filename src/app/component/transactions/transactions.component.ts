@@ -50,7 +50,6 @@ export class TransactionsComponent implements OnInit {
         this.items = this.filterData;
       } else {
         this.items = this.filterData.filter(x =>
-          // console.log('x',x)
            x.auth_code.trim().toLowerCase().includes(term.trim().toLowerCase())
         );
       }
