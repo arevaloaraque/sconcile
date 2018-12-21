@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  sconcile_service: "http://127.0.0.1:8000"
+  sconcile_service: "https://devsconcileservice.apps-lapaymentgroup.com"
 };
 
 /*
@@ -15,3 +15,14 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+// {
+//   context: [
+//       "/auth",
+//       "/sales"
+//   ],
+//   target: "http://devsconcileservice.apps-lapaymentgroup.com",
+//   secure: false,
+//   "changeOrigin": true
+// }
