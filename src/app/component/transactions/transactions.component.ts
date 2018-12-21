@@ -21,12 +21,13 @@ export class TransactionsComponent implements OnInit {
   searchText : string;
   p: number = 1;
   pageSize:number=10;
-
+  totalItems:number;
   ngOnInit() {
     this.getJSON().subscribe(data => {
       console.log(data)
       this.items=data.items;
       this.filterData=data.items;
+      this.totalItems=data.items.length;
     });
 
     this.apiservice.transaction()
