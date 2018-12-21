@@ -23,16 +23,13 @@ export class TransactionsComponent implements OnInit {
   pageSize:number=10;
   totalItems:number;
   ngOnInit() {
-    this.getJSON().subscribe(data => {
-      this.items=data.items;
-      this.filterData=data.items;
-      this.totalItems=data.items.length;
-    });
-
     this.apiservice.transaction()
     .subscribe(
       data => {
         console.log('data',data);
+        this.items=data.items;
+        this.filterData=data.items;
+        this.totalItems=data.items.length;
       },
       error => {
           console.log('Error',error);
@@ -40,9 +37,6 @@ export class TransactionsComponent implements OnInit {
 
     }
 
-    public getJSON(): Observable<any> {
-      return this.http.get("./assets/response.json")
-    }
 
     search(term) {
       if(!term) {
