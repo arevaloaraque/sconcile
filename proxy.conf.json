@@ -1,13 +1,7 @@
 {
-  "/auth": {
-    "target": "http://devsconcileservice.apps-lapaymentgroup.com",
-    "secure": false,
-    "changeOrigin": true
-  },
-  "/sales": {
-    "target": "http://devsconcileservice.apps-lapaymentgroup.com",
+  "/api/": {
+    "target": "http://localhost:8000",
     "secure": false,
     "changeOrigin": true
   }
-
 }

@@ -48,20 +48,18 @@ export class ServiceService {
   }
 
   transaction(){
-    //
     let httpHeaders = new HttpHeaders({
       //'Content-Type' : 'application/json',
-      'Authorization': 'LGP '+localStorage.getItem('token')
+      'Authorization': 'LGP '+ localStorage.getItem('token')
     });
     let options = {
       headers: httpHeaders
     };
 
-    return this.httpClient.post<any>(
-      this.api+"/sales",
-        options).pipe(map(data=>{
+    return this.httpClient.post<any>(this.api + '/sales', options).pipe(
+      map(data=>{
            return data;
-        }))
+      })
+    )
   }
-
 }
