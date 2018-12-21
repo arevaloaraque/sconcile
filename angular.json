@@ -73,6 +73,9 @@
           "configurations": {
             "production": {
               "browserTarget": "sconcile:build:production"
+            },
+            "dev":{
+              "browserTarget": "sconcile:build:dev"
             }
           }
         },
@@ -127,6 +130,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "sconcile:serve:production"
+            },
+            "dev":{
+              "browserTarget": "sconcile:build:dev"
             }
           }
         },

@@ -49,7 +49,7 @@ export class ServiceService {
 
   transaction(){
     let httpHeaders = new HttpHeaders({
-      //'Content-Type' : 'application/json',
+      'Content-Type' : 'application/json',
       'Authorization': 'LGP '+ localStorage.getItem('token')
     });
     let options = {

@@ -15,3 +15,14 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+// {
+//   context: [
+//       "/auth",
+//       "/sales"
+//   ],
+//   target: "http://devsconcileservice.apps-lapaymentgroup.com",
+//   secure: false,
+//   "changeOrigin": true
+// }
