@@ -59,7 +59,35 @@
             <!-- (keyup)='search($event.target.value)' -->
             <div class="card-header header-elements-inline row">
               <div class="col-lg-3">
-                <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"  placeholder="Search" />
+                <!-- <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" /> -->
+                <select class="custom-select" [(ngModel)]="filterType" >
+                  <option value="status_id" selected>Status</option>
+                  <option value="sale_method">Sales Method</option>
+                  <option value="sale_type">Sales Type</option>
+                  <option value="date_type">Date</option>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                  <!-- (change)="filter($event.target.value)" -->
+                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'status_id'" >
+                    <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                  </select>
+                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'sale_method'" >
+                    <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                  </select>
+                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'sale_type'" >
+                    <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
+                  </select>
+                  <div class="input-group" *ngIf="filterType === 'date_type'">
+                    <span class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                    </span>
+
+                    <input type="text" class="form-control daterange-weeknumbers" value="01/01/2015 - 01/31/2015">
+                  </div>
+                </div>
+              <div class="col-lg-3">
+
               </div>
               <div class="col-lg-3">
                   <select class="custom-select" (change)="totalPerPage($event.target.value)">
@@ -73,26 +101,29 @@
               <table class="table table-responsive datatable-selection-single">
                   <thead>
                       <tr>
-                          <th>Código de Autorización</th>
-                          <th>Monto</th>
-                          <th>Fecha Venta</th>
-                          <th>Método de pago</th>
-                          <th>estado</th>
-                          <th>Método de pago</th>
-                          <th class="text-center">Acciones</th>
+                          <th>{{'salesList.code' | translate}}</th>
+                          <th>{{'salesList.amount' | translate}}</th>
+                          <th>{{'salesList.date' | translate}}</th>
+                          <th>{{'salesList.paymentMethod' | translate}}</th>
+                          <th>{{'salesList.sale_method' | translate}}</th>
+                          <th>{{'salesList.status' | translate}}</th>
+                          <th class="text-center">{{'salesList.action' | translate}}</th>
                           <!--  -->
                         </tr>
                   </thead>
                   <tbody>
-                      <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems } | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index; ">
+                       <!-- For filter -->
+                      <!-- | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index; -->
+                      <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems }  ">
                           <td>{{item.auth_code}}</td>
                           <td>{{item.amount}}</td>
                           <td>{{item.sale_date | date:'dd MMM yyyy'}}</td>
                           <td>{{item.sale_type.name}}</td>
-                          <td><span class="badge badge-success">{{item.status.name}}</span></td>
                           <td>
                             {{item.sale_method.name}}
                           </td>
+                          <td><span class="badge badge-success">{{item.status.name}}</span></td>
+
                           <td>
                               <div class="list-icons">
                                   <div class="dropdown">

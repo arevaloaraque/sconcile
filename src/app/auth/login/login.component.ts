@@ -53,6 +53,7 @@ export class LoginComponent implements OnInit {
       .subscribe(
         data => {
           this.toastrService.success('Login successfully!');
+          this.spinner.hide();
           this.router.navigate(['/home']);
         },
         error => {

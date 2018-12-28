@@ -74,7 +74,7 @@
             "production": {
               "browserTarget": "sconcile:build:production"
             },
-            "dev":{
+            "dev": {
               "browserTarget": "sconcile:build:dev"
             }
           }
@@ -131,7 +131,7 @@
             "production": {
               "devServerTarget": "sconcile:serve:production"
             },
-            "dev":{
+            "dev": {
               "browserTarget": "sconcile:build:dev"
             }
           }

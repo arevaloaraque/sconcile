@@ -18,7 +18,6 @@
         "charged":"Charged",
         "graphic":"Graphic",
         "fertilizers":"fertilizers"
-
     },
     "auth":{
         "title":"Login to your account",
@@ -29,5 +28,14 @@
         "password":"Password",
         "signin":"Sign in",
         "forgot":"Forgot"
+    },
+    "salesList":{
+        "code":"Authorization Code",
+        "amount":"Amount",
+        "date":"Sale date",
+        "paymentMethod":"Payment method",
+        "status":"Status",
+        "sale_method":"Sale Method",
+        "action":"Action"
     }
 }

@@ -22,7 +22,7 @@ export class AppComponent {
     private titleService: Title,
     private translate: TranslateService
   ) {
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
     // es=Spanish
     // en=English
   }

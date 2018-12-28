@@ -28,5 +28,14 @@
         "password":"contraseña",
         "signin":"Iniciar sesión",
         "forgot":"Olvidó"
+    },
+    "salesList":{
+        "code":"Código de Autorización",
+        "amount":"Monto",
+        "date":"Fecha Venta",
+        "paymentMethod":"Método de pago",
+        "status":"estado",
+        "sale_method":"Método de pago",
+        "action":"Acciones"
     }
 }
