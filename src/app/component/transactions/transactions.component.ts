@@ -13,6 +13,9 @@ export class TransactionsComponent implements OnInit {
   constructor(
     private apiservice:ServiceService
   ) { }
+
+
+
   // transactions:[Object];
   items;
   filterData;
@@ -53,6 +56,8 @@ export class TransactionsComponent implements OnInit {
           console.log('Error',error);
         }
       )
+
+
     }
     filter(){
       console.log('filterType',this.filterType);

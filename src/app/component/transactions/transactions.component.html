@@ -83,13 +83,13 @@
                       <span class="input-group-text"><i class="icon-calendar22"></i></span>
                     </span>
 
-                    <input type="text" class="form-control daterange-weeknumbers" value="01/01/2015 - 01/31/2015">
+                    <!-- <ngx-daterangepicker [(ngModel)]="value" [options]="options"></ngx-daterangepicker> -->
                   </div>
                 </div>
               <div class="col-lg-3">
 
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-2">
                   <select class="custom-select" (change)="totalPerPage($event.target.value)">
                       <option value="5">5</option>
                       <option value="10" selected>10</option>
@@ -98,6 +98,12 @@
                     </select>
               </div>
             </div>
+            <ngx-spinner
+        bdColor = "rgba(51, 51, 51, 0.8)"
+        size = "large"
+        color = "#fff"
+        type = "ball-atom"
+        ></ngx-spinner>
               <table class="table table-responsive datatable-selection-single">
                   <thead>
                       <tr>
