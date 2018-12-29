@@ -99,7 +99,31 @@ export class ServiceService {
     )
   }
 
-  filter(filterWith,value){
+  filter(status_id,sale_method,sale_type){
+    console.log(status_id,sale_method,sale_type);
+    let query;
+    if(status_id){
+      query="status_id="+status_id;
+    }
+    if(sale_method)
+    {
+      if(status_id){
+        query=query+"&sale_method="+sale_method;
+
+      }
+      else{
+        query="sale_method="+sale_method;
+      }
+    }
+    if(sale_type){
+      if(sale_method || status_id){
+        query=query+"&sale_type="+sale_type
+      }
+      else{
+        query="sale_type="+sale_type
+      }
+    }
+    console.log('query',query);
     this.spinner.show();
     let httpHeaders = new HttpHeaders().set('Authorization','LPG '+ localStorage.getItem('token'));
     // 'Content-Type' : 'application/json',
@@ -109,7 +133,7 @@ export class ServiceService {
     };
     console.log(httpHeaders)
 
-    return this.httpClient.get<any>(this.api + '/sales?'+filterWith+'='+value, headers).pipe(
+    return this.httpClient.get<any>(this.api + '/sales?'+query, headers).pipe(
       map(data=>{
           this.spinner.hide();
            return data;

@@ -21,6 +21,9 @@ export class TransactionsComponent implements OnInit {
   filterData;
   userFilter ={  auth_code: '' };
   searchText : string;
+  status:string="";
+  method:string="";
+  type:string="";
   filterType:string;
   p: number = 1;
   pageSize:number=10;
@@ -60,12 +63,9 @@ export class TransactionsComponent implements OnInit {
 
     }
     filter(){
-      console.log('filterType',this.filterType);
-      console.log('this.searchText',this.searchText);
-      this.apiservice.filter(this.filterType,this.searchText)
+      this.apiservice.filter(this.status,this.method,this.type)
         .subscribe(
           data=>{
-            console.log('data',data);
             this.items=data.items;
             this.filterData=data.items;
             this.totalItems=data.items.length;

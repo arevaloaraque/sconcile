@@ -21,11 +21,8 @@
             <a routerLink="/transactions" class="breadcrumb-item active">{{'menu.transactions' | translate}}</a>
             <!-- <span class="breadcrumb-item active">Advanced</span> -->
           </div>
-
           <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
-
-
       </div>
     </div>
   </div>
@@ -33,77 +30,67 @@
   <div class="content-wrapper">
 
     <div class="content">
+
+
+
+
+
         <div class="card">
-            <!-- <div class="card-header header-elements-inline">
-                <div class="page-header-content header-elements-md-inline">
-                    <div class="page-title d-flex">
-
-                      <a href="#" class="header-elements-toggle text-default d-md-none"><i
-                          class="icon-more"></i></a>
-                    </div>
-
-                    <div class="header-elements d-none">
-                      <div class="d-flex justify-content-center">
-                        <div class="input-group">
-                          <span class="input-group-prepend">
-                            <span class="input-group-text"><i class="icon-calendar22"></i></span>
-                          </span>
-                          <input type="text" class="form-control daterange-basic"
-                            value="01/01/2015 - 01/31/2015">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div> -->
-
-            <!-- (keyup)='search($event.target.value)' -->
             <div class="card-header header-elements-inline row">
-              <div class="col-lg-3">
-                <!-- <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" /> -->
-                <select class="custom-select" [(ngModel)]="filterType" >
-                  <option value="status_id" selected>Status</option>
-                  <option value="sale_method">Sales Method</option>
-                  <option value="sale_type">Sales Type</option>
-                  <option value="date_type">Date</option>
-                </select>
+              <div class="col-lg-5">
+                <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" />
               </div>
-              <div class="col-lg-3">
-                  <!-- (change)="filter($event.target.value)" -->
-                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'status_id'" >
+
+              <div class="header-elements col-lg-2 flex-row-reverse">
+                  <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" data-toggle="collapse">
+                      <i class="icon-circle-down2"></i> Filter
+                  </a>
+              </div>
+            </div>
+            <div class="card-header header-elements-inline row collapse" id="collapse-icon">
+                <div class="col-lg-3">
+                  <label>Status</label>
+                  <select class="custom-select" [(ngModel)]="status" (change)="filter()"  >
+                    <option selected value="">Select Status</option>
                     <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
                   </select>
-                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'sale_method'" >
-                    <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                </div>
+                <div class="col-lg-3">
+                  <label>Sales method</label>
+                  <select class="custom-select" [(ngModel)]="method" (change)="filter()"  >
+                      <option selected value="">Select Method</option>
+                      <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
                   </select>
-                  <select class="custom-select" [(ngModel)]="searchText" (change)="filter()" *ngIf="filterType === 'sale_type'" >
-                    <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
+                </div>
+                <div class="col-lg-3">
+                  <label>Sales type</label>
+                  <select class="custom-select" [(ngModel)]="type" (change)="filter()"  >
+                      <option selected value="">Select Type</option>
+                      <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
                   </select>
-                  <div class="input-group" *ngIf="filterType === 'date_type'">
+                </div>
+                <!-- <div class="col-lg-3">
+                  <label>Status</label>
+                  <div class="input-group" >
                     <span class="input-group-prepend">
                       <span class="input-group-text"><i class="icon-calendar22"></i></span>
                     </span>
-
-                    <!-- <ngx-daterangepicker [(ngModel)]="value" [options]="options"></ngx-daterangepicker> -->
                   </div>
-                </div>
-              <div class="col-lg-3">
+                </div> -->
+              </div>
 
+            <div class="card-header header-elements-inline row">
+              <div class="col-lg-10">
               </div>
               <div class="col-lg-2">
-                  <select class="custom-select" (change)="totalPerPage($event.target.value)">
-                      <option value="5">5</option>
-                      <option value="10" selected>10</option>
-                      <option value="15">15</option>
-                      <option value="20">20</option>
-                    </select>
-              </div>
+                    <select class="custom-select" (change)="totalPerPage($event.target.value)">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                      </select>
+                </div>
             </div>
-            <ngx-spinner
-        bdColor = "rgba(51, 51, 51, 0.8)"
-        size = "large"
-        color = "#fff"
-        type = "ball-atom"
-        ></ngx-spinner>
               <table class="table table-responsive datatable-selection-single">
                   <thead>
                       <tr>
@@ -119,8 +106,8 @@
                   </thead>
                   <tbody>
                        <!-- For filter -->
-                      <!-- | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index; -->
-                      <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems }  ">
+                      <!--  -->
+                      <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems } | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index;  ">
                           <td>{{item.auth_code}}</td>
                           <td>{{item.amount}}</td>
                           <td>{{item.sale_date | date:'dd MMM yyyy'}}</td>
