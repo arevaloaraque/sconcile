@@ -49,14 +49,14 @@
             </div>
             <div class="card-header header-elements-inline row collapse" id="collapse-icon">
                 <div class="col-lg-3">
-                  <label>Status</label>
+                  <label>{{'salesList.status' | translate}}</label>
                   <select class="custom-select" [(ngModel)]="status" (change)="filter()"  >
                     <option selected value="">Select Status</option>
                     <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
                   </select>
                 </div>
                 <div class="col-lg-3">
-                  <label>Sales method</label>
+                  <label>{{'salesList.sale_method' | translate}}</label>
                   <select class="custom-select" [(ngModel)]="method" (change)="filter()"  >
                       <option selected value="">Select Method</option>
                       <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
@@ -77,12 +77,13 @@
                     </span>
                   </div>
                 </div> -->
-              </div>
+            </div>
 
             <div class="card-header header-elements-inline row">
-              <div class="col-lg-10">
+              <div class="col-lg-2 flex-row" style="color:#36a69a">
+                  <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> Sales found
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 flex-row-reverse">
                     <select class="custom-select" (change)="totalPerPage($event.target.value)">
                         <option value="5">5</option>
                         <option value="10" selected>10</option>
