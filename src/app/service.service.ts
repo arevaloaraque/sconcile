@@ -98,9 +98,13 @@ export class ServiceService {
       })
     )
   }
+  dateEditFormat(d){
+    var dd = new Date(d);
+    var mm=dd.getMonth()+1;
+    return dd.getFullYear()+'-'+mm+'-'+dd.getDate();
+  }
 
-  filter(status_id,sale_method,sale_type){
-    console.log(status_id,sale_method,sale_type);
+  filter(status_id,sale_method,sale_type,date){
     let query;
     if(status_id){
       query="status_id="+status_id;
@@ -123,6 +127,21 @@ export class ServiceService {
         query="sale_type="+sale_type
       }
     }
+    if(date){
+
+      var nwdate=date.split('-');
+      let gte=this.dateEditFormat(nwdate[0]);
+      let lte=this.dateEditFormat(nwdate[1]);
+
+      if(sale_type || sale_method || status_id ){
+        query=query+"&sale_date__date__gte="+gte+"&sale_date__date__lte="+lte
+      }
+      else{
+        query="sale_date__date__gte="+gte+"&sale_date__date__lte="+lte
+      }
+    }
+
+
     console.log('query',query);
     this.spinner.show();
     let httpHeaders = new HttpHeaders().set('Authorization','LPG '+ localStorage.getItem('token'));

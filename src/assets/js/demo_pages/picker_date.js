@@ -61,7 +61,7 @@ var DateTimePickers = function() {
         });
 
         // Single picker
-        $('.daterange-single').daterangepicker({ 
+        $('.daterange-single').daterangepicker({
             singleDatePicker: true
         });
 
@@ -243,7 +243,7 @@ var DateTimePickers = function() {
                 picker_date.close();
             } else {
                 picker_date.open();
-            }                        
+            }
             event.stopPropagation();
         });
 
@@ -357,7 +357,7 @@ var DateTimePickers = function() {
                 picker_time.close();
             } else {
                 picker_time.open();
-            }                        
+            }
             event.stopPropagation();
         });
 

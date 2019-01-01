@@ -10,8 +10,6 @@
             </h4>
           <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
-
-
       </div>
 
       <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
@@ -28,56 +26,63 @@
   </div>
 
   <div class="content-wrapper">
-
     <div class="content">
-
-
-
-
-
         <div class="card">
             <div class="card-header header-elements-inline row">
               <div class="col-lg-5">
                 <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" />
               </div>
-
               <div class="header-elements col-lg-2 flex-row-reverse">
                   <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" data-toggle="collapse">
-                      <i class="icon-circle-down2"></i> Filter
+                      <i class="icon-circle-down2"></i>
                   </a>
               </div>
             </div>
-            <div class="card-header header-elements-inline row collapse" id="collapse-icon">
-                <div class="col-lg-3">
-                  <label>{{'salesList.status' | translate}}</label>
-                  <select class="custom-select" [(ngModel)]="status" (change)="filter()"  >
-                    <option selected value="">Select Status</option>
-                    <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
-                  </select>
-                </div>
-                <div class="col-lg-3">
-                  <label>{{'salesList.sale_method' | translate}}</label>
-                  <select class="custom-select" [(ngModel)]="method" (change)="filter()"  >
-                      <option selected value="">Select Method</option>
-                      <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
-                  </select>
-                </div>
-                <div class="col-lg-3">
-                  <label>Sales type</label>
-                  <select class="custom-select" [(ngModel)]="type" (change)="filter()"  >
-                      <option selected value="">Select Type</option>
-                      <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
-                  </select>
-                </div>
-                <!-- <div class="col-lg-3">
-                  <label>Status</label>
-                  <div class="input-group" >
-                    <span class="input-group-prepend">
-                      <span class="input-group-text"><i class="icon-calendar22"></i></span>
-                    </span>
-                  </div>
-                </div> -->
-            </div>
+
+              <div class="collapse" id="collapse-icon">
+                    <div class="card-header header-elements-inline row">
+                      <div class="col-lg-3">
+                        <label>{{'salesList.status' | translate}}</label>
+                        <!-- (change)="filter()" -->
+                        <select class="custom-select" [(ngModel)]="status"   >
+                          <option selected value="">Select Status</option>
+                          <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3">
+                        <label>{{'salesList.sale_method' | translate}}</label>
+                        <!-- (change)="filter()" -->
+                        <select class="custom-select" [(ngModel)]="method"   >
+                            <option selected value="">Select Method</option>
+                            <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3">
+                        <label>Sales type</label>
+                        <!-- (change)="filter()" -->
+                        <select class="custom-select" [(ngModel)]="type"   >
+                            <option selected value="">Select Type</option>
+                            <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3">
+                        <label>Date</label>
+                        <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate" 
+                            (ApplyDateChange)="onStartDateChange($event)"
+                            (CancelDateChange)="onStartDateChange($event)"
+                            (HideDateChange)="onStartDateChange($event)"
+                            (change)="filter()">
+                      </div>
+                    </div>
+
+                    <div class="card-header header-elements-inline row flex-row-reverse">
+                      <div class="col-lg-3 header-elements flex-row-reverse">
+                        <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
+                          Filter
+                        </button>
+                      </div>
+                    </div>
+              </div>
 
             <div class="card-header header-elements-inline row">
               <div class="col-lg-2 flex-row" style="color:#36a69a">

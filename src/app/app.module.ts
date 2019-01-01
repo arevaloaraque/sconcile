@@ -25,6 +25,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TransactionsComponent } from './component/transactions/transactions.component';
+import { DaterangeDirective } from './daterange.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TransactionsComponent } from './component/transactions/transactions.com
     UserProfileComponent,
     DashboardComponent,
     TransactionsComponent,
-    GrdFilterPipe
+    GrdFilterPipe,
+    DaterangeDirective
   ],
   imports: [
     BrowserModule,
