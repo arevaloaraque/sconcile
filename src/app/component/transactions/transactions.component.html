@@ -34,7 +34,7 @@
                 <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" />
               </div>
               <div class="header-elements col-lg-2 flex-row-reverse">
-                  <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" data-toggle="collapse">
+                  <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" (click)="onStartDateChange($event)" data-toggle="collapse">
                       <i class="icon-circle-down2"></i>
                   </a>
               </div>
@@ -45,8 +45,8 @@
                       <div class="col-lg-3">
                         <label>{{'salesList.status' | translate}}</label>
                         <!-- (change)="filter()" -->
-                        <select class="custom-select" [(ngModel)]="status"   >
-                          <option selected value="">Select Status</option>
+                        <select class="custom-select" [(ngModel)]="status">
+                          <option selected value="">{{'transaction.select' | translate}} {{'salesList.status' | translate}}</option>
                           <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
                         </select>
                       </div>
@@ -54,20 +54,21 @@
                         <label>{{'salesList.sale_method' | translate}}</label>
                         <!-- (change)="filter()" -->
                         <select class="custom-select" [(ngModel)]="method"   >
-                            <option selected value="">Select Method</option>
+                            <option selected value="">{{'transaction.select' | translate}} {{'transaction.method' | translate}}</option>
                             <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
                         </select>
                       </div>
                       <div class="col-lg-3">
-                        <label>Sales type</label>
+                        <label>{{'transaction.type' | translate}}</label>
                         <!-- (change)="filter()" -->
                         <select class="custom-select" [(ngModel)]="type"   >
-                            <option selected value="">Select Type</option>
+                            <option selected value="">{{'transaction.select' | translate}} {{'transaction.type' | translate}}</option>
                             <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
                         </select>
                       </div>
                       <div class="col-lg-3">
-                        <label>Date</label>
+                        <label>{{'salesList.date' | translate}}</label>
+                        <!-- <input type="button" id="rangeDemoClear" (click)="onStartDateChange($event)" class="btn btn-light" value="clear"> -->
                         <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
                             (ApplyDateChange)="onStartDateApply($event)"
                             (CancelDateChange)="onStartDateChange($event)"
@@ -79,14 +80,14 @@
                     <div class="card-header header-elements-inline row flex-row-reverse">
                       <div class="col-lg-3 header-elements flex-row-reverse">
                         <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
-                          Filter
+                          {{'transaction.filter' | translate}}
                         </button>
                       </div>
                     </div>
               </div>
 
             <div class="card-header header-elements-inline row">
-              <div class="col-lg-2 flex-row" style="color:#36a69a">
+              <div class="col-lg-3 flex-row" style="color:#36a69a">
                   <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> {{'transaction.saleFound' | translate}}
               </div>
               <div class="col-lg-2 flex-row-reverse" *ngIf="totalItems">

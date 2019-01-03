@@ -39,6 +39,10 @@
         "action":"Action"
     },
     "transaction":{
-        "saleFound":"Sales found"
+        "saleFound":"Sales found",
+        "type":"Type",
+        "select":"Select",
+        "method":"Method",
+        "filter":"Filter"
     }
 }

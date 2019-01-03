@@ -30,7 +30,7 @@ export class TransactionsComponent implements OnInit {
   pageSize: number = 10;
   totalItems: number;
 
-  startEndDate: string = "";
+  startEndDate: string;
   filterStatus: any = [];
   filterSales_method: any = [];
   filterSales_type: any = [];
@@ -59,7 +59,7 @@ export class TransactionsComponent implements OnInit {
       .subscribe(
         data => {
           console.log('data', data);
-          // this.items = data.items;
+          this.items = data.items;
           this.filterData = data.items;
           this.totalItems = data.items.length;
         },

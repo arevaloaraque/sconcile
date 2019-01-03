@@ -39,6 +39,10 @@
         "action":"Acciones"
     },
     "transaction":{
-        "saleFound":"Ventas encontradas"
+        "saleFound":"Ventas encontradas",
+        "type":"tipo",
+        "select":"seleccionar",
+        "method":"Método",
+        "filter":"Filtrar"
     }
 }
