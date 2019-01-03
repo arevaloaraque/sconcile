@@ -9,7 +9,7 @@ import * as Chart from 'chart.js'
 export class DashboardComponent implements OnInit {
 
   constructor() { }
-
+  startEndDate:string;
   canvas: any;
   ctx: any;
 
@@ -105,6 +105,17 @@ export class DashboardComponent implements OnInit {
 
   }
   ngOnInit() {
+
+    var date = new Date();
+    var last = new Date(date.getTime() - (15 * 24 * 60 * 60 * 1000));
+    var sMonth = date.getMonth() + 1;
+    var lMonth = last.getMonth() + 1;
+    var sDate = sMonth + '/' + date.getDate() + '/' + date.getFullYear();
+    var lDate = lMonth + '/' + last.getDate() + '/' + last.getFullYear();
+    this.startEndDate=lDate+' - '+sDate;
   }
 
+  onStartDateChange(date){
+    this.startEndDate = date;
+  }
 }

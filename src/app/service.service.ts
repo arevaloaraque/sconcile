@@ -9,6 +9,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
   providedIn: 'root'
 })
 export class ServiceService {
+  private modals: any[] = [];
 
   constructor(
     private httpClient: HttpClient,
@@ -185,4 +186,6 @@ export class ServiceService {
       })
     )
   }
+
+
 }

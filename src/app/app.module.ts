@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import {CalendarModule} from 'primeng/calendar';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
@@ -51,6 +53,7 @@ import { DaterangeDirective } from './daterange.directive';
     ReactiveFormsModule,
     AppRoutingModule,
     NgxSpinnerModule,
+    CalendarModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

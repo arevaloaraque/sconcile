@@ -37,5 +37,8 @@
         "status":"Status",
         "sale_method":"Sale Method",
         "action":"Action"
+    },
+    "transaction":{
+        "saleFound":"Sales found"
     }
 }

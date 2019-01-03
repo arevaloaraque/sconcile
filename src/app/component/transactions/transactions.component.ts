@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 // transaction
 import { ServiceService } from '../../service.service';
 // import { Observable } from 'rxjs/Observable';
-import { HttpClient } from '@angular/common/http';
+
+import { FormControl, FormGroup,FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-transactions',
   templateUrl: './transactions.component.html',
@@ -34,6 +35,14 @@ export class TransactionsComponent implements OnInit {
   filterSales_method: any = [];
   filterSales_type: any = [];
 
+  editItems:any;
+  deleteItems:any;
+
+  editSaleType:string;
+  editStatus:string;
+  editMethod:string;
+  date1: Date;
+
   ngOnInit() {
     // "03/18/2013 - 03/23/2013"
 
@@ -55,7 +64,6 @@ export class TransactionsComponent implements OnInit {
           this.totalItems = data.items.length;
         },
         error => {
-          // this.spinner.hide();
           console.log('Error', error);
         });
 
@@ -69,11 +77,9 @@ export class TransactionsComponent implements OnInit {
         },
         error => {
           console.log('Error', error);
-        }
-      )
-
-
+        });
   }
+
   filter() {
     this.apiservice.filter(this.status,this.method,this.type,this.startEndDate)
       .subscribe(
@@ -92,7 +98,23 @@ export class TransactionsComponent implements OnInit {
     this.startEndDate = date;
   }
 
+  editSels(item){
+    console.log('item',item);
+    this.editItems=item;
+    this.editSaleType=item.sale_type.id;
+    this.editStatus=item.status.id;
+    this.editMethod=item.sale_method.id;
+  }
+  deleteSels(i){
+    this.deleteItems=i;
+  }
   totalPerPage(page) {
     this.pageSize = page;
+  }
+  editSales(){
+    console.log('this.editSaleType',this.editSaleType);
+  }
+  deleteSales(){
+    console.log('Delete me',this.deleteItems);
   }
 }

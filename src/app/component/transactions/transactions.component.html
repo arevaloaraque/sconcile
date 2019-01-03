@@ -30,6 +30,7 @@
         <div class="card">
             <div class="card-header header-elements-inline row">
               <div class="col-lg-5">
+
                 <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" />
               </div>
               <div class="header-elements col-lg-2 flex-row-reverse">
@@ -67,7 +68,7 @@
                       </div>
                       <div class="col-lg-3">
                         <label>Date</label>
-                        <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate" 
+                        <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
                             (ApplyDateChange)="onStartDateChange($event)"
                             (CancelDateChange)="onStartDateChange($event)"
                             (HideDateChange)="onStartDateChange($event)"
@@ -86,9 +87,9 @@
 
             <div class="card-header header-elements-inline row">
               <div class="col-lg-2 flex-row" style="color:#36a69a">
-                  <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> Sales found
+                  <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> {{'transaction.saleFound' | translate}}
               </div>
-              <div class="col-lg-2 flex-row-reverse">
+              <div class="col-lg-2 flex-row-reverse" *ngIf="totalItems">
                     <select class="custom-select" (change)="totalPerPage($event.target.value)">
                         <option value="5">5</option>
                         <option value="10" selected>10</option>
@@ -97,7 +98,7 @@
                       </select>
                 </div>
             </div>
-              <table class="table table-responsive datatable-selection-single">
+              <table class="table table-responsive datatable-selection-single" *ngIf="totalItems">
                   <thead>
                       <tr>
                           <th>{{'salesList.code' | translate}}</th>
@@ -131,8 +132,8 @@
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right">
-                                      <a href="#" class="dropdown-item">Edit</a>
-                                      <a href="#" class="dropdown-item">Delete</a>
+                                        <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
+                                        <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
                                     </div>
                                   </div>
                                 </div>
@@ -142,7 +143,7 @@
                   </tbody>
               </table>
 
-                <div class="mx-auto card-header header-elements-inline">
+                <div *ngIf="totalItems"  class="mx-auto card-header header-elements-inline">
                   <pagination-controls (pageChange)="p = $event"
                   directionLinks="true"
                   autoHide="true"
@@ -153,12 +154,73 @@
                   screenReaderPageLabel="page"
                   screenReaderCurrentLabel="You're on page"></pagination-controls>
                 </div>
-
-
-
-
           </div>
     </div>
 
+    <div id="modal_theme_primary"  class="modal fade" tabindex="-1">
+        <div class="modal-dialog" *ngIf="editItems">
+          <div class="modal-content">
+            <div class="modal-header bg-teal-400">
+              <h6 class="modal-title">Edit Sell</h6>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              <h6 class="font-weight-semibold">{{editItems.auth_code}}</h6>
+              <div class="row">
+                <div class="col-lg-6">
+                    <label>Sales type</label>
+                    <select class="custom-select"  [(ngModel)]="editSaleType">
+                        <option *ngFor="let t of filterSales_type"   [value]="t.id">{{t.name}}</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <label>{{'salesList.status' | translate}}</label>
+                    <select class="custom-select" [(ngModel)]="editStatus">
+                        <option selected value="">Select Status</option>
+                        <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                    </select>
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="col-lg-6">
+                    <label>{{'salesList.sale_method' | translate}}</label>
+                    <select class="custom-select" [(ngModel)]="editMethod">
+                      <option selected value="">Select Method</option>
+                      <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <label>Date</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+              <button type="button"  (click)="editSales()"  class="btn bg-teal-400">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="modal_delete" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" *ngIf="deleteItems">
+            <div class="modal-content">
+              <div class="modal-header bg-teal-400">
+                <h6 class="modal-title">Delete Sell</h6>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+                <div class="modal-body">
+                Are you sure to delete <b>{{deleteItems.auth_code}}</b> sell?
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button"  (click)="deleteSales()"  class="btn bg-teal-400">Yes</button>
+              </div>
+            </div>
+          </div>
+    </div>
   </div>
 
