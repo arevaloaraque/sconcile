@@ -105,14 +105,14 @@ export class ServiceService {
     return dd.getFullYear()+'-'+mm+'-'+dd.getDate();
   }
 
-  filter(status_id,sale_method,sale_type,date){
+  filter(status,sale_method,sale_type,date){
     let query;
-    if(status_id){
-      query="status_id="+status_id;
+    if(status){
+      query="status="+status;
     }
     if(sale_method)
     {
-      if(status_id){
+      if(status){
         query=query+"&sale_method="+sale_method;
 
       }
@@ -121,7 +121,7 @@ export class ServiceService {
       }
     }
     if(sale_type){
-      if(sale_method || status_id){
+      if(sale_method || status){
         query=query+"&sale_type="+sale_type
       }
       else{
@@ -134,7 +134,7 @@ export class ServiceService {
       let gte=this.dateEditFormat(nwdate[0]);
       let lte=this.dateEditFormat(nwdate[1]);
 
-      if(sale_type || sale_method || status_id ){
+      if(sale_type || sale_method || status ){
         query=query+"&sale_date__date__gte="+gte+"&sale_date__date__lte="+lte
       }
       else{
