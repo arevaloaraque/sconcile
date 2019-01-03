@@ -99,6 +99,7 @@ export class TransactionsComponent implements OnInit {
   }
   onStartDateApply(date){
     this.startEndDate=date;
+    console.log('Apply date',date);
   }
 
   editSels(item){
