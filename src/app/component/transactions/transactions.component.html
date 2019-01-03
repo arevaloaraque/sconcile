@@ -69,10 +69,10 @@
                       <div class="col-lg-3">
                         <label>Date</label>
                         <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
-                            (ApplyDateChange)="onStartDateChange($event)"
+                            (ApplyDateChange)="onStartDateApply($event)"
                             (CancelDateChange)="onStartDateChange($event)"
                             (HideDateChange)="onStartDateChange($event)"
-                            (change)="filter()">
+                            (change)="filter()" >
                       </div>
                     </div>
 

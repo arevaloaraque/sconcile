@@ -53,13 +53,13 @@ export class TransactionsComponent implements OnInit {
     var sDate = sMonth + '/' + date.getDate() + '/' + date.getFullYear();
     var lDate = lMonth + '/' + last.getDate() + '/' + last.getFullYear();
     this.startEndDate=lDate+' - '+sDate;
-
+    // this.startEndDate="";
 
     this.apiservice.transaction()
       .subscribe(
         data => {
           console.log('data', data);
-          this.items = data.items;
+          // this.items = data.items;
           this.filterData = data.items;
           this.totalItems = data.items.length;
         },
@@ -95,7 +95,10 @@ export class TransactionsComponent implements OnInit {
   }
 
   onStartDateChange(date){
-    this.startEndDate = date;
+    this.startEndDate = "";
+  }
+  onStartDateApply(date){
+    this.startEndDate=date;
   }
 
   editSels(item){
