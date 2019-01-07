@@ -44,6 +44,7 @@ export class TransactionsComponent implements OnInit {
   date1: Date;
 
   ngOnInit() {
+    this.verifyToken();
     // "03/18/2013 - 03/23/2013"
 
     var date = new Date();
@@ -78,6 +79,17 @@ export class TransactionsComponent implements OnInit {
         error => {
           console.log('Error', error);
         });
+  }
+
+  verifyToken(){
+    this.apiservice.verify_token()
+    .subscribe(
+      data=>{
+        if(data.status==400){
+          this.apiservice.logout();
+        }
+      }
+    )
   }
 
   filter() {

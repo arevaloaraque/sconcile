@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js'
+import { ServiceService } from '../../service.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,9 @@ import * as Chart from 'chart.js'
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private apiservice: ServiceService
+  ) { }
   startEndDate:string;
   canvas: any;
   ctx: any;
@@ -105,7 +108,7 @@ export class DashboardComponent implements OnInit {
 
   }
   ngOnInit() {
-
+    this.verifyToken();
     var date = new Date();
     var last = new Date(date.getTime() - (15 * 24 * 60 * 60 * 1000));
     var sMonth = date.getMonth() + 1;
@@ -117,5 +120,15 @@ export class DashboardComponent implements OnInit {
 
   onStartDateChange(date){
     this.startEndDate = date;
+  }
+  verifyToken(){
+    this.apiservice.verify_token()
+    .subscribe(
+      data=>{
+        if(data.status==400){
+          this.apiservice.logout();
+        }
+      }
+    )
   }
 }

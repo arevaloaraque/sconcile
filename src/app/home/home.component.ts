@@ -12,7 +12,9 @@ export class HomeComponent implements OnInit {
   constructor(
 
     // private titleService:Title
-  ) { }
+  ) {
+    console.log('Load page');
+  }
 
 
   ngOnInit() {
