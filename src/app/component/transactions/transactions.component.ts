@@ -88,6 +88,11 @@ export class TransactionsComponent implements OnInit {
         if(data.status==400){
           this.apiservice.logout();
         }
+      },
+      error=>{
+        if(error.status==400){
+          this.apiservice.logout();
+        }
       }
     )
   }

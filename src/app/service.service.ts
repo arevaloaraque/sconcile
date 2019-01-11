@@ -66,6 +66,7 @@ export class ServiceService {
           return user;
         },
         error=>{
+          this.logout();
           console.log('error ',error);
           return error;
         }))
