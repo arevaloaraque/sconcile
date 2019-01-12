@@ -4,7 +4,6 @@
   <div class="page-header-content header-elements-md-inline">
 
     <div class="page-title d-flex">
-      <!-- <label>Basic select</label> -->
       <select class="custom-select" >
           <option value="AZ">Arizona</option>
           <option value="CO">Colorado</option>
@@ -12,11 +11,8 @@
           <option value="WY">Wyoming</option>
       </select>
 
-      <h4 class="pad-left">
-        {{ 'dashboard.branch-offices' | translate }}
-      </h4>
-      <a href="#" class="header-elements-toggle text-default d-md-none"><i
-          class="icon-more"></i></a>
+      <h4 class="pad-left">{{ 'dashboard.branch-offices' | translate }}</h4>
+      <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
     </div>
 
     <div class="header-elements d-none">
@@ -25,11 +21,11 @@
           <span class="input-group-prepend">
             <span class="input-group-text"><i class="icon-calendar22"></i></span>
           </span>
-            <!-- <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
+            <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
                             (ApplyDateChange)="onStartDateChange($event)"
                             (CancelDateChange)="onStartDateChange($event)"
                             (HideDateChange)="onStartDateChange($event)"
-                            (change)="filter()"> -->
+                            (change)="filter()">
         </div>
       </div>
     </div>
@@ -41,104 +37,145 @@
 
 <!-- Content area -->
 <div class="content">
+      <!-- reconciliation status -->
       <div class="row">
-
-        <div class="col-lg-3">
-          <h6 class="card-title">{{'dashboard.sales' | translate}} $</h6>
+        <div class="col-md-4">
           <div class="card bg-blue-400">
-            <div class="card-body">
-              <div class="d-flex">
-                <h3 class="font-weight-semibold mb-0">$18,390</h3>
-                <div class="list-icons ml-auto">
-                  <a class="list-icons-item" data-action="reload"></a>
+            <div class="card-header header-elements-sm-inline">
+              <h6 class="card-title">ESTATUS VENTAS</h6>
+              <span class="badge bg-teal-800 badge-pill align-self-center ml-auto">
+                <i class="icon-info3" aria-hidden="true"></i>
+              </span>
+            </div>
+        
+            <div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">
+              <div class="d-flex align-items-center mb-3 mb-md-0">
+                <div class="ml-3">
+                  <h5 class="font-weight-semibold mb-0">1,132</h5>
+                  <span>total tickets</span>
                 </div>
               </div>
-              <div>
-                Today's revenue
-                <div class="font-size-sm opacity-75">$37,578 avg</div>
+        
+              <div class="d-flex align-items-center mb-3 mb-md-0">
+                <div class="ml-3">
+                  <h5 class="font-weight-semibold mb-0">06:25:00</h5>
+                  <span>response time</span>
+                </div>
               </div>
             </div>
-            <div id="today-revenue"></div>
-            <!-- <canvas id="today-revenue" width="100%" height="100%"></canvas> -->
           </div>
         </div>
-
-        <div class="col-lg-3">
-          <h6 class="card-title">{{'dashboard.fee' | translate}} #</h6>
-          <div class="card bg-pink-400">
-            <div class="card-body">
-              <div class="d-flex">
-                <h3 class="font-weight-semibold mb-0">49.4%</h3>
-                <div class="list-icons ml-auto">
-                  <div class="list-icons-item dropdown">
-                    <a href="#" class="list-icons-item dropdown-toggle"
-                      data-toggle="dropdown"><i class="icon-cog3"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item"><i class="icon-sync"></i>
-                        Update data</a>
-                      <a href="#" class="dropdown-item"><i
-                          class="icon-list-unordered"></i> Detailed log</a>
-                      <a href="#" class="dropdown-item"><i class="icon-pie5"></i>
-                        Statistics</a>
-                      <a href="#" class="dropdown-item"><i class="icon-cross3"></i>
-                        Clear list</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                Current server load
-                <div class="font-size-sm opacity-75">34.6% avg</div>
-              </div>
-            </div>
-
-            <div id="server-load"></div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-3">
-            <h6 class="card-title">{{'dashboard.collect' | translate}} $</h6>
-            <div class="card bg-blue-400">
-              <div class="card-body">
-                <div class="d-flex">
-                  <h3 class="font-weight-semibold mb-0">$18,390</h3>
-                  <div class="list-icons ml-auto">
-                    <a class="list-icons-item" data-action="reload"></a>
-                  </div>
-                </div>
-                <div>
-                  Today's revenue
-                  <div class="font-size-sm opacity-75">$37,578 avg</div>
-                </div>
-              </div>
-              <div id="today-revenue"></div>
-            </div>
-          </div> -->
-
-        <div class="col-lg-3">
-          <h6 class="card-title">{{'dashboard.charged' | translate}} #</h6>
+        <div class="col-md-4">
           <div class="card bg-teal-400">
-            <div class="card-body">
-              <div class="d-flex">
-                <h3 class="font-weight-semibold mb-0">3,450</h3>
-                <span class="badge bg-teal-800 badge-pill align-self-center
-                  ml-auto">+53,6%</span>
-              </div>
-
-              <div>
-                Members online
-                <div class="font-size-sm opacity-75">489 avg</div>
+            <div class="card-header header-elements-sm-inline">
+              <h6 class="card-title">TOTAL VENTAS</h6>
+              <span class="badge bg-teal-800 badge-pill align-self-center ml-auto">
+                <i class="icon-coin-dollar" aria-hidden="true"></i>
+              </span>
+            </div>
+        
+            <div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">
+              <div class="d-flex align-items-center mb-3 mb-md-0">
+                <div class="ml-3">
+                  <h5 class="font-weight-semibold mb-0">1,132</h5>
+                  <span>total tickets</span>
+                </div>
               </div>
             </div>
-
-            <div class="container-fluid">
-              <div id="members-online"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-pink-400">
+            <div class="card-header header-elements-sm-inline">
+              <h6 class="card-title">TOTAL COBRADO $</h6>
+              <span class="badge bg-teal-800 badge-pill align-self-center ml-auto">
+                <i class="icon-coin-dollar" aria-hidden="true"></i>
+              </span>
+            </div>
+          
+            <div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">        
+              <div class="d-flex align-items-center mb-3 mb-md-0">
+                <div class="ml-3">
+                  <h5 class="font-weight-semibold mb-0">1,132</h5>
+                  <span>total tickets</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table" style="background-color: white;">
+            <thead>
+              <tr class="table-active tablae-bordered table-border-double">
+                <td colspan="4" class="card-title">MEDIOS DE PAGO</td>
+                <td class="text-right"><span class="icon-cash"></span></td>
+              </tr>
+              <tr>
+                <th>Nombre</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <a href="#" class="text-default font-weight-semibold">Facebook</a>
+                      <div class="text-muted font-size-sm">
+                        <span class="badge badge-mark border-blue mr-1"></span>
+                        02:00 - 03:00
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="text-muted">Mintlime</span></td>
+                <td>
+                  <h6 class="font-weight-semibold mb-0">$5,489</h6>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table" style="background-color: white;">
+            <thead>
+              <tr class="table-active tablae-bordered table-border-double">
+                <td colspan="4" class="card-title">CUENTAS BANCARIA</td>
+                <td class="text-right"><span class="icon-cash"></span></td>
+              </tr>
+              <tr>
+                <th>Nombre</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <a href="#" class="text-default font-weight-semibold">Facebook</a>
+                      <div class="text-muted font-size-sm">
+                        <span class="badge badge-mark border-blue mr-1"></span>
+                        02:00 - 03:00
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="text-muted">Mintlime</span></td>
+                <td>
+                  <h6 class="font-weight-semibold mb-0">$5,489</h6>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+      <div class="row">&nbsp;</div>
 
       <div class="card">
           <h6 class="card-title">{{'dashboard.graphic' | translate}}(por cobrar y cobrado)$</h6>
@@ -150,5 +187,30 @@
           <canvas id="myChart1" width="700" height="400"></canvas>
       </div>
 
-
+      <div class="card">
+        <div class="card-header header-elements-inline">
+          <h5 class="card-title">Columns timeline</h5>
+          <div class="header-elements">
+            <div class="list-icons">
+              <a class="list-icons-item" data-action="collapse"></a>
+              <a class="list-icons-item" data-action="reload"></a>
+              <a class="list-icons-item" data-action="remove"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-body">
+          <div class="chart-container">
+            <div class="chart has-fixed-height" id="columns_timeline" _echarts_instance_="ec_1547272903842" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+              <div style="position: relative; overflow: hidden; width: 928px; height: 400px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas
+                  data-zr-dom-id="zr_0" width="928" height="400" style="position: absolute; left: 0px; top: 0px; width: 928px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+              <div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(0, 0, 0, 0.75); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 13px/20px Roboto, sans-serif; padding: 10px 15px; left: 614px; top: 215px;">Rome<br><span
+                  style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#c23531;"></span>GDP:
+                41,425.48<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#2f4554;"></span>Financial:
+                2,105.92<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#61a0a8;"></span>Real
+                Estate: 2,600.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>

@@ -24,7 +24,7 @@
           </a>
         </li> -->
 
-        <li class="nav-item nav-item-submenu">
+        <!-- <li class="nav-item nav-item-submenu">
           <a  routerLink="/home" class="nav-link" routerLinkActive="active">
             <i class="icon-home4"></i>
             <span>
@@ -37,18 +37,18 @@
             </li>
           </ul>
 
-        </li>
-        <!-- <li class="nav-item">
-          <a routerLink="/userprofile" class="nav-link" routerLinkActive="active">
-            <i class="icon-home4"></i>
-            <span>
-                {{'menu.user-profile' | translate}}
-            </span>
-          </a>
         </li> -->
         <li class="nav-item">
+          <a routerLink="/home" class="nav-link" routerLinkActive="active">
+            <i class="icon-home4"></i>
+            <span>
+              {{ 'menu.dashboard' | translate }}
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
             <a routerLink="/transactions" class="nav-link" routerLinkActive="active">
-              <i class="icon-cash"></i>
+              <i class="icon-list"></i>
               <span>
                 {{'menu.transactions' | translate}}
               </span>

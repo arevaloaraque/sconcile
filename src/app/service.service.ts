@@ -44,7 +44,6 @@ export class ServiceService {
           return user;
         },
         error=>{
-          console.log('Error',error);
           return error;
         }))
   }
@@ -62,12 +61,10 @@ export class ServiceService {
             "token": localStorage.getItem('token')
         },
         options).pipe(map(user=>{
-           console.log('user',user);
           return user;
         },
         error=>{
           this.logout();
-          console.log('error ',error);
           return error;
         }))
   }
@@ -86,7 +83,6 @@ export class ServiceService {
     let headers = {
       headers: httpHeaders
     };
-    console.log(httpHeaders)
 
     return this.httpClient.get<any>(this.api + '/sales', headers).pipe(
       map(data=>{
@@ -95,7 +91,6 @@ export class ServiceService {
       },
       error=>{
         this.spinner.hide();
-        console.log('Error ',error);
         return error;
       })
     )
@@ -144,7 +139,6 @@ export class ServiceService {
     }
 
 
-    console.log('query',query);
     this.spinner.show();
     let httpHeaders = new HttpHeaders().set('Authorization','LPG '+ localStorage.getItem('token'));
     // 'Content-Type' : 'application/json',
@@ -152,7 +146,6 @@ export class ServiceService {
     let headers = {
       headers: httpHeaders
     };
-    console.log(httpHeaders)
 
     return this.httpClient.get<any>(this.api + '/sales?'+query, headers).pipe(
       map(data=>{
@@ -161,7 +154,6 @@ export class ServiceService {
       },
       error=>{
         this.spinner.hide();
-        console.log('Error ',error);
         return error;
       })
     )
@@ -175,14 +167,12 @@ export class ServiceService {
     let headers = {
       headers: httpHeaders
     };
-    console.log(httpHeaders)
 
     return this.httpClient.get<any>(this.api + '/filters/sales_list', headers).pipe(
       map(data=>{
            return data;
       },
       error=>{
-        console.log('Error ',error);
         return error;
       })
     )

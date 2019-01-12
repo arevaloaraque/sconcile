@@ -3,7 +3,6 @@
       <div class="page-header-content header-elements-md-inline">
         <div class="page-title d-flex">
           <h4>
-            <i class="icon-arrow-left52 mr-2"></i>
             <span class="font-weight-semibold">
                 Listado general de transacciones asociadas a Ventas
             </span>
@@ -15,9 +14,7 @@
       <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
         <div class="d-flex">
           <div class="breadcrumb">
-            <a routerLink="/home" class="breadcrumb-item"><i class="icon-cash mr-2"></i> {{ 'menu.dashboard' | translate }}</a>
             <a routerLink="/transactions" class="breadcrumb-item active">{{'menu.transactions' | translate}}</a>
-            <!-- <span class="breadcrumb-item active">Advanced</span> -->
           </div>
           <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
@@ -31,7 +28,7 @@
             <div class="card-header header-elements-inline row">
               <div class="col-lg-5">
 
-                <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Search" />
+                <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Filtrar resultado en tabla" />
               </div>
               <div class="header-elements col-lg-2 flex-row-reverse">
                   <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" (click)="onStartDateChange($event)" data-toggle="collapse">
@@ -40,51 +37,51 @@
               </div>
             </div>
 
-              <div class="collapse" id="collapse-icon">
-                    <div class="card-header header-elements-inline row">
-                      <div class="col-lg-3">
-                        <label>{{'salesList.status' | translate}}</label>
-                        <!-- (change)="filter()" -->
-                        <select class="custom-select" [(ngModel)]="status">
-                          <option selected value="">{{'transaction.select' | translate}} {{'salesList.status' | translate}}</option>
-                          <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3">
-                        <label>{{'salesList.sale_method' | translate}}</label>
-                        <!-- (change)="filter()" -->
-                        <select class="custom-select" [(ngModel)]="method"   >
-                            <option selected value="">{{'transaction.select' | translate}} {{'transaction.method' | translate}}</option>
-                            <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3">
-                        <label>{{'transaction.type' | translate}}</label>
-                        <!-- (change)="filter()" -->
-                        <select class="custom-select" [(ngModel)]="type"   >
-                            <option selected value="">{{'transaction.select' | translate}} {{'transaction.type' | translate}}</option>
-                            <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
-                        </select>
-                      </div>
-                      <div class="col-lg-3">
-                        <label>{{'salesList.date' | translate}}</label>
-                        <!-- <input type="button" id="rangeDemoClear" (click)="onStartDateChange($event)" class="btn btn-light" value="clear"> -->
-                        <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
-                            (ApplyDateChange)="onStartDateApply($event)"
-                            (CancelDateChange)="onStartDateChange($event)"
-                            (HideDateChange)="onStartDateChange($event)"
-                            (change)="filter()" >
-                      </div>
+            <div class="collapse" id="collapse-icon">
+                  <div class="card-header header-elements-inline row">
+                    <div class="col-lg-3">
+                      <label>{{'salesList.status' | translate}}</label>
+                      <!-- (change)="filter()" -->
+                      <select class="custom-select" [(ngModel)]="status">
+                        <option selected value="">{{'transaction.select' | translate}} {{'salesList.status' | translate}}</option>
+                        <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                      </select>
                     </div>
+                    <div class="col-lg-3">
+                      <label>{{'salesList.sale_method' | translate}}</label>
+                      <!-- (change)="filter()" -->
+                      <select class="custom-select" [(ngModel)]="method"   >
+                          <option selected value="">{{'transaction.select' | translate}} {{'transaction.method' | translate}}</option>
+                          <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <label>{{'transaction.type' | translate}}</label>
+                      <!-- (change)="filter()" -->
+                      <select class="custom-select" [(ngModel)]="type"   >
+                          <option selected value="">{{'transaction.select' | translate}} {{'transaction.type' | translate}}</option>
+                          <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <label>{{'salesList.date' | translate}}</label>
+                      <!-- <input type="button" id="rangeDemoClear" (click)="onStartDateChange($event)" class="btn btn-light" value="clear"> -->
+                      <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
+                          (ApplyDateChange)="onStartDateApply($event)"
+                          (CancelDateChange)="onStartDateChange($event)"
+                          (HideDateChange)="onStartDateChange($event)"
+                          (change)="filter()" >
+                    </div>
+                  </div>
 
-                    <div class="card-header header-elements-inline row flex-row-reverse">
-                      <div class="col-lg-3 header-elements flex-row-reverse">
-                        <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
-                          {{'transaction.filter' | translate}}
-                        </button>
-                      </div>
+                  <div class="card-header header-elements-inline row flex-row-reverse">
+                    <div class="col-lg-3 header-elements flex-row-reverse">
+                      <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
+                        {{'transaction.filter' | translate}}
+                      </button>
                     </div>
-              </div>
+                  </div>
+            </div>
 
             <div class="card-header header-elements-inline row">
               <div class="col-lg-3 flex-row" style="color:#36a69a">
@@ -99,33 +96,35 @@
                       </select>
                 </div>
             </div>
-              <table class="table table-responsive datatable-selection-single" *ngIf="totalItems">
+
+            <div class="table-responsive">
+              <table class="table datatable-selection-single" *ngIf="totalItems" style="width:100%;">
                   <thead>
                       <tr>
-                          <th>{{'salesList.code' | translate}}</th>
+                          <th class="text-center">{{'salesList.code' | translate}}</th>
                           <th>{{'salesList.amount' | translate}}</th>
                           <th>{{'salesList.date' | translate}}</th>
                           <th>{{'salesList.paymentMethod' | translate}}</th>
                           <th>{{'salesList.sale_method' | translate}}</th>
-                          <th>{{'salesList.status' | translate}}</th>
+                          <th class="text-center">{{'salesList.status' | translate}}</th>
                           <th class="text-center">{{'salesList.action' | translate}}</th>
                           <!--  -->
                         </tr>
                   </thead>
                   <tbody>
-                       <!-- For filter -->
+                        <!-- For filter -->
                       <!--  -->
                       <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems } | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index;  ">
-                          <td>{{item.auth_code}}</td>
-                          <td>{{item.amount}}</td>
+                          <td class="text-center">{{item.auth_code}}</td>
+                          <td>{{item.amount | currency : item.currency.code : currencyFormat}}</td>
                           <td>{{item.sale_date | date:'dd MMM yyyy'}}</td>
                           <td>{{item.sale_type.name}}</td>
                           <td>
                             {{item.sale_method.name}}
                           </td>
-                          <td><span class="badge badge-success">{{item.status.name}}</span></td>
+                          <td class="text-center"><span class="badge badge-success">{{item.status.name}}</span></td>
 
-                          <td>
+                          <td class="text-center">
                               <div class="list-icons">
                                   <div class="dropdown">
                                     <a href="#" class="list-icons-item" data-toggle="dropdown">
@@ -143,19 +142,22 @@
 
                   </tbody>
               </table>
+            </div>
 
-                <div *ngIf="totalItems"  class="mx-auto card-header header-elements-inline">
-                  <pagination-controls (pageChange)="p = $event"
-                  directionLinks="true"
-                  autoHide="true"
-                  responsive="true"
-                  previousLabel="Anterior"
-                  nextLabel="Siguiente"
-                  screenReaderPaginationLabel="Pagination"
-                  screenReaderPageLabel="page"
-                  screenReaderCurrentLabel="You're on page"></pagination-controls>
-                </div>
-          </div>
+            <div class="row">&nbsp;</div>
+
+            <div *ngIf="totalItems"  class="mx-auto card-header header-elements-inline">
+              <pagination-controls (pageChange)="p = $event"
+              directionLinks="true"
+              autoHide="true"
+              responsive="true"
+              previousLabel="Anterior"
+              nextLabel="Siguiente"
+              screenReaderPaginationLabel="Pagination"
+              screenReaderPageLabel="page"
+              screenReaderCurrentLabel="You're on page"></pagination-controls>
+            </div>
+        </div>
     </div>
 
     <div id="modal_theme_primary"  class="modal fade" tabindex="-1">

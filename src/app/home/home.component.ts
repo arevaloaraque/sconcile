@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
     // private titleService:Title
   ) {
-    console.log('Load page');
+    // console.log('Load page');
   }
 
 

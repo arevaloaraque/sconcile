@@ -30,11 +30,11 @@
         "forgot":"Olvidó"
     },
     "salesList":{
-        "code":"Código de Autorización",
+        "code":"Cod Autorización",
         "amount":"Monto",
         "date":"Fecha Venta",
         "paymentMethod":"Método de pago",
-        "status":"estado",
+        "status":"Estado",
         "sale_method":"Método de pago",
         "action":"Acciones"
     },
