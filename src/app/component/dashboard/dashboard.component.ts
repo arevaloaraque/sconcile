@@ -121,6 +121,9 @@ export class DashboardComponent implements OnInit {
   onStartDateChange(date){
     this.startEndDate = date;
   }
+  filter(){
+
+  }
   verifyToken(){
     this.apiservice.verify_token()
     .subscribe(
