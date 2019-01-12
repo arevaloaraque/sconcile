@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// transaction
 import { ServiceService } from '../../service.service';
-// import { Observable } from 'rxjs/Observable';
-
 import { FormControl, FormGroup,FormBuilder } from '@angular/forms';
+import * as $ from 'jquery';
+
+
 @Component({
   selector: 'app-transactions',
   templateUrl: './transactions.component.html',

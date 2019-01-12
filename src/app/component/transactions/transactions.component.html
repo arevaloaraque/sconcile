@@ -1,229 +1,263 @@
-  <div class="content-wrapper">
-    <div class="page-header page-header-light">
-      <div class="page-header-content header-elements-md-inline">
-        <div class="page-title d-flex">
-          <h4>
-            <span class="font-weight-semibold">
-                Listado general de transacciones asociadas a Ventas
-            </span>
-            </h4>
-          <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-        </div>
+<div class="content-wrapper">
+  <div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+      <div class="page-title d-flex">
+        <h4>
+          <span class="font-weight-semibold">
+              Listado general de transacciones asociadas a Ventas
+          </span>
+          </h4>
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
       </div>
+    </div>
 
-      <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-        <div class="d-flex">
-          <div class="breadcrumb">
-            <a routerLink="/transactions" class="breadcrumb-item active">{{'menu.transactions' | translate}}</a>
-          </div>
-          <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+      <div class="d-flex">
+        <div class="breadcrumb">
+          <a routerLink="/transactions" class="breadcrumb-item active">{{'menu.transactions' | translate}}</a>
         </div>
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="content-wrapper">
-    <div class="content">
-        <div class="card">
-            <div class="card-header header-elements-inline row">
-              <div class="col-lg-5">
+<div class="content-wrapper">
+  <div class="content">
+      <div class="card">
+          <div class="card-header header-elements-inline row">
+            <div class="col-lg-5">
 
-                <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Filtrar resultado en tabla" />
-              </div>
-              <div class="header-elements col-lg-2 flex-row-reverse">
-                  <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" (click)="onStartDateChange($event)" data-toggle="collapse">
-                      <i class="icon-circle-down2"></i>
-                  </a>
-              </div>
+              <input type="text" class="form-control input-sm"  [(ngModel)]="searchText"   placeholder="Filtrar resultado en tabla" />
             </div>
-
-            <div class="collapse" id="collapse-icon">
-                  <div class="card-header header-elements-inline row">
-                    <div class="col-lg-3">
-                      <label>{{'salesList.status' | translate}}</label>
-                      <!-- (change)="filter()" -->
-                      <select class="custom-select" [(ngModel)]="status">
-                        <option selected value="">{{'transaction.select' | translate}} {{'salesList.status' | translate}}</option>
-                        <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-3">
-                      <label>{{'salesList.sale_method' | translate}}</label>
-                      <!-- (change)="filter()" -->
-                      <select class="custom-select" [(ngModel)]="method"   >
-                          <option selected value="">{{'transaction.select' | translate}} {{'transaction.method' | translate}}</option>
-                          <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-3">
-                      <label>{{'transaction.type' | translate}}</label>
-                      <!-- (change)="filter()" -->
-                      <select class="custom-select" [(ngModel)]="type"   >
-                          <option selected value="">{{'transaction.select' | translate}} {{'transaction.type' | translate}}</option>
-                          <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-3">
-                      <label>{{'salesList.date' | translate}}</label>
-                      <!-- <input type="button" id="rangeDemoClear" (click)="onStartDateChange($event)" class="btn btn-light" value="clear"> -->
-                      <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
-                          (ApplyDateChange)="onStartDateApply($event)"
-                          (CancelDateChange)="onStartDateChange($event)"
-                          (HideDateChange)="onStartDateChange($event)"
-                          (change)="filter()" >
-                    </div>
-                  </div>
-
-                  <div class="card-header header-elements-inline row flex-row-reverse">
-                    <div class="col-lg-3 header-elements flex-row-reverse">
-                      <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
-                        {{'transaction.filter' | translate}}
-                      </button>
-                    </div>
-                  </div>
+            <div class="header-elements col-lg-2 flex-row-reverse">
+                <a href="#collapse-icon" class="btn bg-teal-400 rounded-round" (click)="onStartDateChange($event)" data-toggle="collapse">
+                    <i class="icon-circle-down2"></i>
+                </a>
             </div>
+          </div>
 
-            <div class="card-header header-elements-inline row">
-              <div class="col-lg-3 flex-row" style="color:#36a69a">
-                  <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> {{'transaction.saleFound' | translate}}
-              </div>
-              <div class="col-lg-2 flex-row-reverse" *ngIf="totalItems">
-                    <select class="custom-select" (change)="totalPerPage($event.target.value)">
-                        <option value="5">5</option>
-                        <option value="10" selected>10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                      </select>
+          <div class="collapse" id="collapse-icon">
+                <div class="card-header header-elements-inline row">
+                  <div class="col-lg-3">
+                    <label>{{'salesList.status' | translate}}</label>
+                    <!-- (change)="filter()" -->
+                    <select class="custom-select" [(ngModel)]="status">
+                      <option selected value="">{{'transaction.select' | translate}} {{'salesList.status' | translate}}</option>
+                      <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <label>{{'salesList.sale_method' | translate}}</label>
+                    <!-- (change)="filter()" -->
+                    <select class="custom-select" [(ngModel)]="method"   >
+                        <option selected value="">{{'transaction.select' | translate}} {{'transaction.method' | translate}}</option>
+                        <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <label>{{'transaction.type' | translate}}</label>
+                    <!-- (change)="filter()" -->
+                    <select class="custom-select" [(ngModel)]="type"   >
+                        <option selected value="">{{'transaction.select' | translate}} {{'transaction.type' | translate}}</option>
+                        <option *ngFor="let t of filterSales_type"  [value]="t.id">{{t.name}}</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <label>{{'salesList.date' | translate}}</label>
+                    <!-- <input type="button" id="rangeDemoClear" (click)="onStartDateChange($event)" class="btn btn-light" value="clear"> -->
+                    <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate"
+                        (ApplyDateChange)="onStartDateApply($event)"
+                        (CancelDateChange)="onStartDateChange($event)"
+                        (HideDateChange)="onStartDateChange($event)"
+                        (change)="filter()" >
+                  </div>
                 </div>
+
+                <div class="card-header header-elements-inline row flex-row-reverse">
+                  <div class="col-lg-3 header-elements flex-row-reverse">
+                    <button type="button" (click)="filter()" class="btn bg-teal-400 rounded-round">
+                      {{'transaction.filter' | translate}}
+                    </button>
+                  </div>
+                </div>
+          </div>
+
+          <div class="card-header header-elements-inline row">
+            <div class="col-lg-3 flex-row" style="color:#36a69a">
+                <i class="icon-stack3 mr-2"></i><b>{{totalItems}}</b> {{'transaction.saleFound' | translate}}
             </div>
+            <div class="col-lg-2 flex-row-reverse" *ngIf="totalItems">
+                  <select class="custom-select" (change)="totalPerPage($event.target.value)">
+                      <option value="5">5</option>
+                      <option value="10" selected>10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                    </select>
+              </div>
+          </div>
 
-            <div class="table-responsive">
-              <table class="table datatable-selection-single" *ngIf="totalItems" style="width:100%;">
-                  <thead>
-                      <tr>
-                          <th class="text-center">{{'salesList.code' | translate}}</th>
-                          <th>{{'salesList.amount' | translate}}</th>
-                          <th>{{'salesList.date' | translate}}</th>
-                          <th>{{'salesList.paymentMethod' | translate}}</th>
-                          <th>{{'salesList.sale_method' | translate}}</th>
-                          <th class="text-center">{{'salesList.status' | translate}}</th>
-                          <th class="text-center">{{'salesList.action' | translate}}</th>
-                          <!--  -->
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <!-- For filter -->
-                      <!--  -->
-                      <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems } | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index;  ">
-                          <td class="text-center">{{item.auth_code}}</td>
-                          <td>{{item.amount | currency : item.currency.code : currencyFormat}}</td>
-                          <td>{{item.sale_date | date:'dd MMM yyyy'}}</td>
-                          <td>{{item.sale_type.name}}</td>
-                          <td>
-                            {{item.sale_method.name}}
-                          </td>
-                          <td class="text-center"><span class="badge badge-success">{{item.status.name}}</span></td>
+          <div class="table-responsive">
+            <table class="table datatable-selection-single" *ngIf="totalItems" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th class="text-center">{{'salesList.code' | translate}}</th>
+                        <th>{{'salesList.amount' | translate}}</th>
+                        <th>{{'salesList.date' | translate}}</th>
+                        <th>{{'salesList.paymentMethod' | translate}}</th>
+                        <th>{{'salesList.sale_method' | translate}}</th>
+                        <th class="text-center">{{'salesList.status' | translate}}</th>
+                        <th class="text-center">{{'salesList.action' | translate}}</th>
+                        <!--  -->
+                      </tr>
+                </thead>
+                <tbody>
+                      <!-- For filter -->
+                    <!--  -->
+                    <tr *ngFor="let item of items | paginate: {  itemsPerPage: pageSize, currentPage: p, totalItems:totalItems } | grdFilter: {auth_code: searchText, amount:searchText, sale_date:searchText}; let i=index;  ">
+                        <td class="text-center">{{item.auth_code}}</td>
+                        <td>{{item.amount | currency : item.currency.code : currencyFormat}}</td>
+                        <td>{{item.sale_date | date:'dd MMM yyyy'}}</td>
+                        <td>{{item.sale_type.name}}</td>
+                        <td>
+                          {{item.sale_method.name}}
+                        </td>
+                        <td class="text-center"><span class="badge badge-success">{{item.status.name}}</span></td>
 
-                          <td class="text-center">
-                              <div class="list-icons">
-                                  <div class="dropdown">
-                                    <a href="#" class="list-icons-item" data-toggle="dropdown">
-                                      <i class="icon-menu9"></i>
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
-                                        <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
-                                    </div>
-                                  </div>
+                        <td class="text-center">
+                            <div class="list-icons">
+                                <div class="dropdown">
+                                  <a href="#" class="list-icons-item" data-toggle="dropdown">
+                                    <i class="icon-menu9" data-popup="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+                                  </a>
+                                  <!-- <div class="dropdown-menu dropdown-menu-right">
+                                      <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
+                                      <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
+                                      <a (click)="deleteSels(item)" type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">
+                                        RECONCILIATE<i class="icon-gear mr-2"></i>
+                                      </a>
+                                  </div> -->
                                 </div>
-                          </td>
-                        </tr>
+                            </div>
+                        </td>
+                      </tr>
 
-                  </tbody>
-              </table>
+                </tbody>
+            </table>
+          </div>
+
+          <div class="row">&nbsp;</div>
+
+          <div *ngIf="totalItems"  class="mx-auto card-header header-elements-inline">
+            <pagination-controls (pageChange)="p = $event"
+            directionLinks="true"
+            autoHide="true"
+            responsive="true"
+            previousLabel="Anterior"
+            nextLabel="Siguiente"
+            screenReaderPaginationLabel="Pagination"
+            screenReaderPageLabel="page"
+            screenReaderCurrentLabel="You're on page"></pagination-controls>
+          </div>
+      </div>
+  </div>
+
+  <div id="modal_theme_primary"  class="modal fade" tabindex="-1">
+      <div class="modal-dialog" *ngIf="editItems">
+        <div class="modal-content">
+          <div class="modal-header bg-teal-400">
+            <h6 class="modal-title">Edit Sell</h6>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <h6 class="font-weight-semibold">{{editItems.auth_code}}</h6>
+            <div class="row">
+              <div class="col-lg-6">
+                  <label>Sales type</label>
+                  <select class="custom-select"  [(ngModel)]="editSaleType">
+                      <option *ngFor="let t of filterSales_type"   [value]="t.id">{{t.name}}</option>
+                  </select>
+              </div>
+              <div class="col-lg-6">
+                  <label>{{'salesList.status' | translate}}</label>
+                  <select class="custom-select" [(ngModel)]="editStatus">
+                      <option selected value="">Select Status</option>
+                      <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
+                  </select>
+              </div>
             </div>
-
-            <div class="row">&nbsp;</div>
-
-            <div *ngIf="totalItems"  class="mx-auto card-header header-elements-inline">
-              <pagination-controls (pageChange)="p = $event"
-              directionLinks="true"
-              autoHide="true"
-              responsive="true"
-              previousLabel="Anterior"
-              nextLabel="Siguiente"
-              screenReaderPaginationLabel="Pagination"
-              screenReaderPageLabel="page"
-              screenReaderCurrentLabel="You're on page"></pagination-controls>
+            <div class="row pt-3">
+              <div class="col-lg-6">
+                  <label>{{'salesList.sale_method' | translate}}</label>
+                  <select class="custom-select" [(ngModel)]="editMethod">
+                    <option selected value="">Select Method</option>
+                    <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
+                  </select>
+              </div>
+              <div class="col-lg-6">
+                  <label>Date</label>
+              </div>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            <button type="button"  (click)="editSales()"  class="btn bg-teal-400">Save changes</button>
+          </div>
         </div>
-    </div>
+      </div>
+  </div>
 
-    <div id="modal_theme_primary"  class="modal fade" tabindex="-1">
-        <div class="modal-dialog" *ngIf="editItems">
+  <div id="modal_delete" class="modal fade" tabindex="-1">
+      <div class="modal-dialog" *ngIf="deleteItems">
           <div class="modal-content">
             <div class="modal-header bg-teal-400">
-              <h6 class="modal-title">Edit Sell</h6>
+              <h6 class="modal-title">Delete Sell</h6>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-
-            <div class="modal-body">
-              <h6 class="font-weight-semibold">{{editItems.auth_code}}</h6>
-              <div class="row">
-                <div class="col-lg-6">
-                    <label>Sales type</label>
-                    <select class="custom-select"  [(ngModel)]="editSaleType">
-                        <option *ngFor="let t of filterSales_type"   [value]="t.id">{{t.name}}</option>
-                    </select>
-                </div>
-                <div class="col-lg-6">
-                    <label>{{'salesList.status' | translate}}</label>
-                    <select class="custom-select" [(ngModel)]="editStatus">
-                        <option selected value="">Select Status</option>
-                        <option *ngFor="let t of filterStatus"  [value]="t.id">{{t.name}}</option>
-                    </select>
-                </div>
-              </div>
-              <div class="row pt-3">
-                <div class="col-lg-6">
-                    <label>{{'salesList.sale_method' | translate}}</label>
-                    <select class="custom-select" [(ngModel)]="editMethod">
-                      <option selected value="">Select Method</option>
-                      <option *ngFor="let t of filterSales_method" [value]="t.id">{{t.name}}</option>
-                    </select>
-                </div>
-                <div class="col-lg-6">
-                    <label>Date</label>
-                </div>
-              </div>
+              <div class="modal-body">
+              Are you sure to delete <b>{{deleteItems.auth_code}}</b> sell?
             </div>
 
             <div class="modal-footer">
               <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-              <button type="button"  (click)="editSales()"  class="btn bg-teal-400">Save changes</button>
+              <button type="button"  (click)="deleteSales()"  class="btn bg-teal-400">Yes</button>
             </div>
           </div>
         </div>
-    </div>
+  </div>
+</div>
 
-    <div id="modal_delete" class="modal fade" tabindex="-1">
-        <div class="modal-dialog" *ngIf="deleteItems">
-            <div class="modal-content">
-              <div class="modal-header bg-teal-400">
-                <h6 class="modal-title">Delete Sell</h6>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-                <div class="modal-body">
-                Are you sure to delete <b>{{deleteItems.auth_code}}</b> sell?
-              </div>
+<!-- Modal data -->
+<div id="modal_theme_info" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h6 class="modal-title">Info header</h6>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
 
-              <div class="modal-footer">
-                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-                <button type="button"  (click)="deleteSales()"  class="btn bg-teal-400">Yes</button>
-              </div>
-            </div>
-          </div>
+      <div class="modal-body">
+        <h6 class="font-weight-semibold">Text in a modal</h6>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo
+          cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+          dolor auctor.</p>
+
+        <hr>
+
+        <h6 class="font-weight-semibold">Another paragraph</h6>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+          rutrum faucibus dolor auctor.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg-info">Save changes</button>
+      </div>
     </div>
   </div>
-
+</div>
+<!-- /Modal data -->
