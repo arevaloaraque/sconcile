@@ -1,3 +1,195 @@
-<p>
-  user-profile works!
-</p>
+<style>
+  input.form-control {
+    height: 50px;
+    font-size: 15px;
+  }
+</style>
+<div class="content-wrapper">
+  <div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+      <div class="page-title d-flex">
+        <h4>
+          <span class="font-weight-semibold">
+            Perfil de usuario
+          </span>
+        </h4>
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+      </div>
+    </div>
+
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+      <div class="d-flex">
+        <div class="breadcrumb">
+          <a routerLink="/userprofile" class="breadcrumb-item active">Mi Perfil</a>
+        </div>
+        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header header-elements-inline">
+        <h5 class="card-title">Información de Login</h5>
+        <hr>
+      </div>
+
+      <div class="card-body">
+        <div class="form-group">
+          <label>Contrase&ntilde;a actual:</label>
+          <div class="input-group">
+            <span class="input-group-prepend">
+              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
+            </span>
+            <input type="password" class="form-control border-success" placeholder="Contrase&ntilde;a actual">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Nueva contrase&ntilde;a:</label>
+          <div class="input-group">
+            <span class="input-group-prepend">
+              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
+            </span>
+            <input type="password" class="form-control border-success" placeholder="Nueva contrase&ntilde;a">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Repetir contrase&ntilde;a:</label>
+          <div class="input-group">
+            <span class="input-group-prepend">
+              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
+            </span>
+            <input type="password" class="form-control border-success" placeholder="Repetir contrase&ntilde;a">
+          </div>
+        </div>
+        <div class="help">
+          <ul style="padding:0px;margin:0px;">
+            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+              puede asemejarse tanto a su otra información personal.</li>
+            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña debe
+              contener al menos 8 caracteres.</li>
+            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+              puede ser una clave utilizada comunmente.</li>
+            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+              puede ser completamente numérica.</li>
+          </ul>
+        </div>
+        <div class="form-group"><small class="text-primary"><span class="icon s7-info"></span>&nbsp;Para modificar la
+            contraseña, complete el formulario y presione el botón actualizar.</small></div>
+        <div class="text-inverse">
+          <button type="button" class="btn bg-slate-700"><i class="icon-make-group mr-2"></i> Actualizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header header-elements-inline">
+        <h5 class="card-title">Información Personal</h5>
+      </div>
+
+      <div class="card-body">
+        <div class="form-group">
+          <label>Large select</label>
+          <select multiple="" data-placeholder="Select a State..." class="form-control form-control-lg select select2-hidden-accessible"
+            data-container-css-class="select-lg" data-fouc="" tabindex="-1" aria-hidden="true">
+            <option></option>
+            <optgroup label="Mountain Time Zone">
+              <option value="AZ">Arizona</option>
+              <option value="CO">Colorado</option>
+              <option value="ID" selected="">Idaho</option>
+              <option value="WY">Wyoming</option>
+            </optgroup>
+            <optgroup label="Central Time Zone">
+              <option value="AL">Alabama</option>
+              <option value="IA" selected="">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+            </optgroup>
+          </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span
+              class="selection"><span class="select2-selection select2-selection--multiple select-lg" role="combobox"
+                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                <ul class="select2-selection__rendered">
+                  <li class="select2-selection__choice" title="Idaho"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Idaho</li>
+                  <li class="select2-selection__choice" title="Iowa"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Iowa</li>
+                  <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search"
+                      tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox"
+                      aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
+                </ul>
+              </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+        </div>
+
+        <div class="form-group">
+          <label>Default select</label>
+          <select multiple="" data-placeholder="Select a State..." class="form-control select select2-hidden-accessible"
+            data-fouc="" tabindex="-1" aria-hidden="true">
+            <option></option>
+            <optgroup label="Mountain Time Zone">
+              <option value="AZ" selected="">Arizona</option>
+              <option value="CO">Colorado</option>
+              <option value="ID">Idaho</option>
+              <option value="WY">Wyoming</option>
+            </optgroup>
+            <optgroup label="Central Time Zone">
+              <option value="AL" selected="">Alabama</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+            </optgroup>
+          </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span
+              class="selection"><span class="select2-selection select2-selection--multiple" role="combobox"
+                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                <ul class="select2-selection__rendered">
+                  <li class="select2-selection__choice" title="Arizona"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Arizona</li>
+                  <li class="select2-selection__choice" title="Alabama"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Alabama</li>
+                  <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search"
+                      tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox"
+                      aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
+                </ul>
+              </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+        </div>
+
+        <div class="form-group">
+          <label>Small select</label>
+          <select multiple="" data-placeholder="Select a State..." class="form-control form-control-sm select select2-hidden-accessible"
+            data-container-css-class="select-sm" data-fouc="" tabindex="-1" aria-hidden="true">
+            <option></option>
+            <optgroup label="Mountain Time Zone">
+              <option value="AZ">Arizona</option>
+              <option value="CO">Colorado</option>
+              <option value="ID">Idaho</option>
+              <option value="WY" selected="">Wyoming</option>
+            </optgroup>
+            <optgroup label="Central Time Zone">
+              <option value="AL">Alabama</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY" selected="">Kentucky</option>
+            </optgroup>
+          </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span
+              class="selection"><span class="select2-selection select2-selection--multiple select-sm" role="combobox"
+                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                <ul class="select2-selection__rendered">
+                  <li class="select2-selection__choice" title="Wyoming"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Wyoming</li>
+                  <li class="select2-selection__choice" title="Kentucky"><span class="select2-selection__choice__remove"
+                      role="presentation">×</span>Kentucky</li>
+                  <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search"
+                      tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox"
+                      aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
+                </ul>
+              </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

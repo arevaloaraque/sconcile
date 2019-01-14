@@ -1186,7 +1186,7 @@ var EchartsColumnsWaterfalls = function() {
                         yAxis: [
                             {
                                 type: 'value',
-                                name: 'GDP（million)',
+                                name: 'GDP（million)....',
                                 max: 53500,
                                 axisLabel: {
                                     color: '#333'

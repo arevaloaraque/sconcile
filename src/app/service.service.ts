@@ -178,5 +178,18 @@ export class ServiceService {
     )
   }
 
+  dashboard(){
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/dashboard_view', headers).pipe(
+      map(data => {
+        return data;
+      },
+        error => {
+          return error;
+        })
+    )
+  }
 
 }

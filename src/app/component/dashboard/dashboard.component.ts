@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Chart from 'chart.js'
 import { ServiceService } from '../../service.service';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,97 +11,27 @@ export class DashboardComponent implements OnInit {
   constructor(
     private apiservice: ServiceService
   ) { }
+
   startEndDate:string;
-  canvas: any;
-  ctx: any;
-
-  canvas1:any;
-  ctx1:any;
-
-  revenue:any;
-  today:any;
+  total_reconciliated_sales:any = [];
+  total_amount_sales:any;
+  payment_methods:any;
+  total_bank_payments:any;
+  bank_accounts:any;
 
   ngAfterViewInit() {
-    this.canvas = document.getElementById('myChart');
-    this.ctx = this.canvas.getContext('2d');
-    let myChart = new Chart(this.ctx, {
-      type: 'bar',
-      data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-          datasets: [
-              {
-                  label: '',
-                  backgroundColor: '#920909',
-                  borderColor: '#1E88E5',
-                  data: [63, 58, 82, 81, 56, 55, 41]
-              },
-              {
-                  label: '',
-                  backgroundColor: '#04033b',
-                  borderColor: '#7CB342',
-                  data: [27, 49, 45, 19, 87, 28, 90]
-              },
-              {
-                label: '',
-                backgroundColor: '#0c6790',
-                borderColor: '#7CB342',
-                data: [2, 50, 40, 29, 80, 27, 40]
-              },
 
-          ]
-      },
-      options: {
-        responsive: false,
-        display:true,
-        scales: {
-          yAxes:[{
-            ticks:{
-              beginAtZero:true
-            }
-          }]
-        }
+    this.apiservice.dashboard().subscribe(data => {
+      this.total_reconciliated_sales = data['total_reconciliated_sales'];
+      this.total_amount_sales = data['total_amount_sales']['total'];
+      this.payment_methods = data['payment_methods'];
+      this.total_bank_payments = data['total_bank_payments']['total'];
+      this.bank_accounts = data['bank_accounts'];
+    },
+      error => {
+        console.log('Error', error);
       }
-    });
-
-    this.canvas1 = document.getElementById('myChart1');
-    this.ctx1 = this.canvas1.getContext('2d');
-    let myChart1 = new Chart(this.ctx1, {
-      type: 'bar',
-      data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-          datasets: [
-              {
-                  label: '',
-                  backgroundColor: '#920909',
-                  borderColor: '#1E88E5',
-                  data: [63, 58, 82, 81, 56, 55, 41]
-              },
-              {
-                  label: '',
-                  backgroundColor: '#04033b',
-                  borderColor: '#7CB342',
-                  data: [27, 49, 45, 19, 87, 28, 90]
-              },
-              {
-                label: '',
-                backgroundColor: '#0c6790',
-                borderColor: '#7CB342',
-                data: [2, 50, 40, 29, 80, 27, 40]
-              },
-          ]
-      },
-      options: {
-        responsive: false,
-        display:true,
-        scales: {
-          yAxes:[{
-            ticks:{
-              beginAtZero:true
-            }
-          }]
-        }
-      }
-    });
+    );
 
     var columns_timeline_element = document.getElementById('columns_timeline');
     // Initialize chart
@@ -111,21 +39,21 @@ export class DashboardComponent implements OnInit {
 
     // Demo data
     var dataMap = {};
-    dataMap.dataGDP = ({
-      2014: [16251.93, 11307.28, 24515.76, 11237.55, 14359.88, 22226.7, 10568.83, 12582, 19195.69, 49110.27],
+    dataMap['dataGDP'] = ({
+      2014: [16251.93, 11307.28, 24515.76, 11237.55, 14359.88, 22226.7, 10568.83, 12582, 19195.69, 19195.69],
       2013: [14113.58, 9224.46, 20394.26, 9200.86, 11672, 18457.27, 8667.58, 10368.6, 17165.98, 41425.48],
       2012: [12153.03, 7521.85, 17235.48, 7358.31, 9740.25, 15212.49, 7278.75, 8587, 15046.45, 34457.3],
       2011: [11115, 6719.01, 16011.97, 7315.4, 8496.2, 13668.58, 6426.1, 8314.37, 14069.87, 30981.98],
       2010: [9846.81, 5252.76, 13607.32, 6024.45, 6423.18, 11164.3, 5284.69, 7104, 12494.01, 26018.48]
     });
-    dataMap.dataEstate = ({
+    dataMap['dataEstate'] = ({
       2014: [1074.93, 411.46, 918.02, 224.91, 384.76, 876.12, 238.61, 492.1, 1019.68, 2747.89],
       2013: [1006.52, 377.59, 697.79, 192, 309.25, 733.37, 212.32, 391.89, 1002.5, 2600.95],
       2012: [1062.47, 308.73, 612.4, 173.31, 286.65, 605.27, 200.14, 301.18, 1237.56, 2025.39],
       2011: [844.59, 227.88, 513.81, 166.04, 273.3, 500.81, 182.7, 244.47, 939.34, 1626.13],
       2010: [821.5, 183.44, 467.97, 134.12, 191.01, 410.43, 153.03, 225.81, 958.06, 1365.71]
     });
-    dataMap.dataFinancial = ({
+    dataMap['dataFinancial'] = ({
       2014: [2215.41, 756.5, 746.01, 519.32, 447.46, 755.57, 207.65, 370.78, 2277.4, 2600.11],
       2013: [1863.61, 572.99, 615.42, 448.3, 346.44, 639.27, 190.12, 304.59, 1950.96, 2105.92],
       2012: [1603.63, 461.2, 525.67, 361.64, 291.1, 560.2, 180.83, 227.54, 1804.28, 1596.98],
@@ -133,10 +61,8 @@ export class DashboardComponent implements OnInit {
       2010: [1302.77, 288.17, 347.65, 218.73, 148.3, 386.34, 126.03, 155.48, 1209.08, 1054.25]
     });
 
-
     // Options
     columns_timeline.setOption({
-
       // Setup timeline
       timeline: {
         axisType: 'category',
@@ -150,14 +76,11 @@ export class DashboardComponent implements OnInit {
             fontSize: 11
           }
         },
-        autoPlay: true,
+        autoPlay: false,
         playInterval: 3000
       },
-
       // Config
-      options: [
-        {
-
+      options: [{
           // Global text styles
           textStyle: {
             fontFamily: 'Roboto, Arial, Verdana, sans-serif',
@@ -222,7 +145,7 @@ export class DashboardComponent implements OnInit {
             splitArea: {
               show: true,
               areaStyle: {
-                color: ['rgba(250,250,250,0.1)', 'rgba(0,0,0,0.015)']
+                color: ['rgba(250,250,250,0.1)', 'rgba(0,0,0,0.019)']
               }
             }
           }],
@@ -231,8 +154,8 @@ export class DashboardComponent implements OnInit {
           yAxis: [
             {
               type: 'value',
-              name: 'GDP（million)',
-              max: 53500,
+              name: '$',
+              //max: 53500,
               axisLabel: {
                 color: '#333'
               },
@@ -247,24 +170,6 @@ export class DashboardComponent implements OnInit {
                   color: '#eee'
                 }
               }
-            },
-            {
-              type: 'value',
-              name: 'Other（million)',
-              axisLabel: {
-                color: '#333'
-              },
-              axisLine: {
-                lineStyle: {
-                  color: '#999'
-                }
-              },
-              splitLine: {
-                show: true,
-                lineStyle: {
-                  color: '#f5f5f5'
-                }
-              }
             }
           ],
 
@@ -273,38 +178,48 @@ export class DashboardComponent implements OnInit {
             {
               name: 'GDP',
               type: 'bar',
-              markLine: {
-                symbol: ['arrow', 'none'],
-                symbolSize: [4, 2],
-                itemStyle: {
-                  normal: {
-                    lineStyle: { color: 'orange' },
-                    barBorderColor: 'orange',
-                    label: {
-                      position: 'left',
-                      formatter: function (params) {
-                        return Math.round(params.value);
-                      },
-                      textStyle: { color: 'orange' }
-                    }
-                  }
-                },
-                data: [{ type: 'average', name: 'Average' }]
-              },
+              // markLine: {
+              //   symbol: ['arrow', 'none'],
+              //   symbolSize: [4],
+              //   itemStyle: {
+              //     normal: {
+              //       lineStyle: { color: 'orange' },
+              //       barBorderColor: 'orange',
+              //       label: {
+              //         position: 'left',
+              //         formatter: function (params) {
+              //           return Math.round(params.value);
+              //         },
+              //         textStyle: { color: 'orange' }
+              //       }
+              //     }
+              //   },
+              //   data: [{ type: 'average', name: 'Average' }]
+              // },
               data: dataMap.dataGDP['2010']
             },
             {
               name: 'Financial',
-              yAxisIndex: 1,
               type: 'bar',
-              data: dataMap.dataFinancial['2010']
+              data: dataMap.dataGDP['2010']
             },
             {
               name: 'Real Estate',
-              yAxisIndex: 1,
               type: 'bar',
-              data: dataMap.dataEstate['2010']
-            }
+              data: dataMap.dataGDP['2010']
+            },
+            // {
+            //   name: 'Financial',
+            //   yAxisIndex: 1,
+            //   type: 'bar',
+            //   data: dataMap.dataFinancial['2010']
+            // },
+            // {
+            //   name: 'Real Estate',
+            //   yAxisIndex: 1,
+            //   type: 'bar',
+            //   data: dataMap.dataEstate['2010']
+            // }
           ]
         },
 
@@ -345,8 +260,8 @@ export class DashboardComponent implements OnInit {
         }
       ]
     });
-
   }
+
   ngOnInit() {
     this.verifyToken();
     var date = new Date();
@@ -361,19 +276,17 @@ export class DashboardComponent implements OnInit {
   onStartDateChange(date){
     this.startEndDate = date;
   }
+
   filter(){
 
   }
   verifyToken(){
-    this.apiservice.verify_token()
-    .subscribe(
-      data=>{
-        if(data.status==400){
+    this.apiservice.verify_token().subscribe(data => {
+        if(data.status == 400){
           this.apiservice.logout();
         }
-      },
-      error=>{
-        if(error.status==400){
+      }, error => {
+        if(error.status == 400){
           this.apiservice.logout();
         }
       }
