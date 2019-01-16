@@ -131,8 +131,6 @@
                                     <i class="icon-menu9" data-popup="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i>
                                   </a>
                                   <div class="dropdown-menu dropdown-menu-right">
-                                      <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
-                                      <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
                                       <a *ngIf="item.status.name === 'NO CONCILIADA'" class="dropdown-item" (click)="paymentBtn(item)" data-toggle="modal" data-target="#modal-full">
                                         RECONCILIATE
                                       </a>

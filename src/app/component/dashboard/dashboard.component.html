@@ -20,16 +20,18 @@
                     <option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>
                   </select>
                 </div>
-                <div *ngIf="submitted2 && f2.old_password.errors" class="">
+                <!-- <div *ngIf="submitted2 && f2.old_password.errors" class="">
                   <div *ngIf="f2.old_password.errors.required" class="text-danger">Este campo es requerido</div>
-                </div>
+                </div> -->
+
+
             <!-- <div class="input-group">
               <span class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="icon-office"></i>
                 </span>
               </span>
-          
+
               <div class="multiselect-native-select">
                 <select class="form-control multiselect" multiple="multiple" [(ngModel)]="branches_filter" name="branches_filter">
                   <option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>

@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
   total_amount_sales:any;
   payment_methods:any;
   total_bank_payments:any;
+  submitted2:any;
   bank_accounts:any;
   branches:any;
   branches_filter:any;
