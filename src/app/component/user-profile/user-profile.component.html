@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row content">
   <div class="col-md-6">
     <div class="card">
       <div class="card-header header-elements-inline">
@@ -36,58 +36,81 @@
         <hr>
       </div>
 
-      <div class="card-body">
-        <div class="form-group">
-          <label for="">Nombre de usuario:</label>
-          <p><i class="icon-user"></i>&nbsp;&nbsp;<b>{{user_data.username}}</b></p>
-        </div>
-        <div class="form-group">
-          <label>Contrase&ntilde;a actual:</label>
-          <div class="input-group">
-            <span class="input-group-prepend">
-              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
-            </span>
-            <input type="password" class="form-control border-success" placeholder="Contrase&ntilde;a actual">
+      <form [formGroup]="userPasswordForm" (ngSubmit)="updateUserPassword()">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="">Nombre de usuario:</label>
+            <p><i class="icon-user"></i>&nbsp;&nbsp;<b>{{user_data.username}}</b></p>
           </div>
-        </div>
+          <div class="form-group">
+            <label>Contrase&ntilde;a actual:</label>
+            <div class="input-group">
+                <span class="input-group-prepend">
+                  <span class="input-group-text "
+                        [ngClass]='{"alpha-success border-success": !(submitted2 && f2.old_password.errors),
+                                    "alpha-danger border-danger": (submitted2 && f2.old_password.errors)}'><i class="icon-vcard"></i></span>
+                </span>
+                <input [ngClass]='{"border-success": !(submitted2 && f2.old_password.errors),
+                                  "border-danger": (submitted2 && f2.old_password.errors)}'
+                      type="password" class="form-control border-success" placeholder="Contraseña actual" formControlName="old_password">
+              </div>
+              <div *ngIf="submitted2 && f2.old_password.errors" class="">
+                <div *ngIf="f2.old_password.errors.required" class="text-danger">Este campo es requerido</div>
+              </div>
+          </div>
 
-        <div class="form-group">
-          <label>Nueva contrase&ntilde;a:</label>
-          <div class="input-group">
-            <span class="input-group-prepend">
-              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
-            </span>
-            <input type="password" class="form-control border-success" placeholder="Nueva contrase&ntilde;a">
+          <div class="form-group">
+            <label>Nueva contrase&ntilde;a:</label>
+            <div class="input-group">
+                <span class="input-group-prepend">
+                  <span class="input-group-text "
+                        [ngClass]='{"alpha-success border-success": !(submitted2 && f2.new_password1.errors),
+                                    "alpha-danger border-danger": (submitted2 && f2.new_password1.errors)}'><i class="icon-vcard"></i></span>
+                </span>
+                <input [ngClass]='{"border-success": !(submitted2 && f2.new_password1.errors),
+                                  "border-danger": (submitted2 && f2.new_password1.errors)}'
+                      type="password" class="form-control border-success" placeholder="Nueva contraseña" formControlName="new_password1">
+            </div>
+            <div *ngIf="submitted2 && f2.new_password1.errors" class="">
+              <div *ngIf="f2.new_password1.errors.required" class="text-danger">Este campo es requerido</div>
+            </div>
           </div>
-        </div>
 
-        <div class="form-group">
-          <label>Repetir contrase&ntilde;a:</label>
-          <div class="input-group">
-            <span class="input-group-prepend">
-              <span class="input-group-text alpha-success border-success"><i class="icon-lock"></i></span>
-            </span>
-            <input type="password" class="form-control border-success" placeholder="Repetir contrase&ntilde;a">
+          <div class="form-group">
+            <label>Repetir contrase&ntilde;a:</label>
+            <div class="input-group">
+                <span class="input-group-prepend">
+                  <span class="input-group-text "
+                        [ngClass]='{"alpha-success border-success": !(submitted2 && f2.new_password2.errors),
+                                    "alpha-danger border-danger": (submitted2 && f2.new_password2.errors)}'><i class="icon-vcard"></i></span>
+                </span>
+                <input [ngClass]='{"border-success": !(submitted2 && f2.new_password2.errors),
+                                  "border-danger": (submitted2 && f2.new_password2.errors)}'
+                      type="password" class="form-control border-success" placeholder="Repetir nueva contraseña" formControlName="new_password2">
+            </div>
+            <div *ngIf="submitted2 && f2.new_password2.errors" class="">
+              <div *ngIf="f2.new_password2.errors.required" class="text-danger">Este campo es requerido</div>
+            </div>
+          </div>
+          <div class="help">
+            <ul style="padding:0px;margin:0px;">
+              <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+                puede asemejarse tanto a su otra información personal.</li>
+              <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña debe
+                contener al menos 8 caracteres.</li>
+              <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+                puede ser una clave utilizada comunmente.</li>
+              <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
+                puede ser completamente numérica.</li>
+            </ul>
+          </div>
+          <div class="form-group"><small class="text-primary"><span class="icon s7-info"></span>&nbsp;Para modificar la
+              contraseña, complete el formulario y presione el botón actualizar.</small></div>
+          <div class="text-inverse">
+            <button type="submit" class="btn bg-slate-700 col-md-12"><i class="icon-make-group mr-2"></i> Actualizar</button>
           </div>
         </div>
-        <div class="help">
-          <ul style="padding:0px;margin:0px;">
-            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
-              puede asemejarse tanto a su otra información personal.</li>
-            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña debe
-              contener al menos 8 caracteres.</li>
-            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
-              puede ser una clave utilizada comunmente.</li>
-            <li class="text-muted" style="list-style:none;margin-bottom:3px;"><i class="s7-info"></i>&nbsp;La contraseña no
-              puede ser completamente numérica.</li>
-          </ul>
-        </div>
-        <div class="form-group"><small class="text-primary"><span class="icon s7-info"></span>&nbsp;Para modificar la
-            contraseña, complete el formulario y presione el botón actualizar.</small></div>
-        <div class="text-inverse">
-          <button type="button" class="btn bg-slate-700 col-md-12"><i class="icon-make-group mr-2"></i> Actualizar</button>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 
@@ -110,8 +133,8 @@
                                 "border-danger": (submitted && f.first_name.errors)}'
                      type="text" class="form-control border-success" placeholder="Nombres" formControlName="first_name">
             </div>
-            <div *ngIf="submitted && f.first_name.errors" class="invalid-feedback">
-              <div *ngIf="f.first_name.errors.required">Este campo es requerido</div>
+            <div *ngIf="submitted && f.first_name.errors" class="">
+              <div *ngIf="f.first_name.errors.required" class="text-danger">Este campo es requerido</div>
             </div>
           </div>
 
@@ -119,9 +142,16 @@
             <label>Apellidos:</label>
             <div class="input-group">
               <span class="input-group-prepend">
-                <span class="input-group-text alpha-success border-success"><i class="icon-vcard"></i></span>
+                <span class="input-group-text "
+                      [ngClass]='{"alpha-success border-success": !(submitted && f.last_name.errors),
+                                  "alpha-danger border-danger": (submitted && f.last_name.errors)}'><i class="icon-vcard"></i></span>
               </span>
-              <input type="text" class="form-control border-success" placeholder="Apellidos" formControlName="last_name">
+              <input [ngClass]='{"border-success": !(submitted && f.last_name.errors),
+                                "border-danger": (submitted && f.last_name.errors)}'
+                     type="text" class="form-control border-success" placeholder="Nombres" formControlName="last_name">
+            </div>
+            <div *ngIf="submitted && f.last_name.errors" class="">
+              <div *ngIf="f.last_name.errors.required" class="text-danger">Este campo es requerido</div>
             </div>
           </div>
 

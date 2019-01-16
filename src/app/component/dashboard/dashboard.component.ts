@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../../service.service';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,9 @@ import { ServiceService } from '../../service.service';
 export class DashboardComponent implements OnInit {
 
   constructor(
-    private apiservice: ServiceService
+    private apiservice: ServiceService,
+    private toastrService: ToastrService,
+    private spinner: NgxSpinnerService
   ) { }
 
   startEndDate:string;
@@ -18,20 +22,23 @@ export class DashboardComponent implements OnInit {
   payment_methods:any;
   total_bank_payments:any;
   bank_accounts:any;
+  branches:any;
+  branches_filter:any;
 
   ngAfterViewInit() {
-
-    this.apiservice.dashboard().subscribe(data => {
-      this.total_reconciliated_sales = data['total_reconciliated_sales'];
-      this.total_amount_sales = data['total_amount_sales']['total'];
-      this.payment_methods = data['payment_methods'];
-      this.total_bank_payments = data['total_bank_payments']['total'];
-      this.bank_accounts = data['bank_accounts'];
-    },
-      error => {
-        console.log('Error', error);
-      }
-    );
+    this.spinner.hide();
+    this.loadDashboardData();
+    // this.apiservice.dashboard().subscribe(data => {
+    //   this.total_reconciliated_sales = data['total_reconciliated_sales'];
+    //   this.total_amount_sales = data['total_amount_sales']['total'];
+    //   this.payment_methods = data['payment_methods'];
+    //   this.total_bank_payments = data['total_bank_payments']['total'];
+    //   this.bank_accounts = data['bank_accounts'];
+    // },
+    //   error => {
+    //     console.log('Error', error);
+    //   }
+    // );
 
     // var columns_timeline_element = document.getElementById('columns_timeline');
     // // Initialize chart
@@ -264,13 +271,18 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.verifyToken();
+    this.apiservice.filterDashboard().subscribe(data => {
+        this.branches = data['branches'];
+      }, error => {
+        console.log('Error', error);
+      });
     var date = new Date();
     var last = new Date(date.getTime() - (15 * 24 * 60 * 60 * 1000));
     var sMonth = date.getMonth() + 1;
     var lMonth = last.getMonth() + 1;
     var sDate = sMonth + '/' + date.getDate() + '/' + date.getFullYear();
     var lDate = lMonth + '/' + last.getDate() + '/' + last.getFullYear();
-    this.startEndDate=lDate+' - '+sDate;
+    this.startEndDate= lDate + ' - ' + sDate;
   }
 
   onStartDateChange(date){
@@ -291,5 +303,24 @@ export class DashboardComponent implements OnInit {
         }
       }
     )
+  }
+
+  loadDashboardData() {
+    let params = {
+      'branches': this.branches_filter,
+      'startEndData': this.startEndDate
+    }
+    console.log(params);
+    this.apiservice.dashboard(params).subscribe(data => {
+      this.total_reconciliated_sales = data['total_reconciliated_sales'];
+      this.total_amount_sales = data['total_amount_sales']['total'];
+      this.payment_methods = data['payment_methods'];
+      this.total_bank_payments = data['total_bank_payments']['total'];
+      this.bank_accounts = data['bank_accounts'];
+    },
+      error => {
+        console.log('Error', error);
+      }
+    );
   }
 }
