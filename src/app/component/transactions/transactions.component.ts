@@ -42,7 +42,7 @@ export class TransactionsComponent implements OnInit {
   editStatus:string;
   editMethod:string;
   date1: Date;
-
+  paymentData:any;
   ngOnInit() {
     this.verifyToken();
     // "03/18/2013 - 03/23/2013"
@@ -56,18 +56,8 @@ export class TransactionsComponent implements OnInit {
     this.startEndDate=lDate+' - '+sDate;
     // this.startEndDate="";
 
-    this.apiservice.transaction()
-      .subscribe(
-        data => {
-          console.log('data', data);
-          this.items = data.items;
-          this.filterData = data.items;
-          this.totalItems = data.items.length;
-        },
-        error => {
-          console.log('Error', error);
-        });
 
+    this.getSalesData();
     this.apiservice.filterDrp()
       .subscribe(
         data => {
@@ -75,6 +65,20 @@ export class TransactionsComponent implements OnInit {
           this.filterStatus = data.status;
           this.filterSales_method = data.sales_method;
           this.filterSales_type = data.sales_type;
+        },
+        error => {
+          console.log('Error', error);
+        });
+  }
+
+  getSalesData(){
+    this.apiservice.transaction()
+      .subscribe(
+        data => {
+          console.log('data', data);
+          this.items = data.items;
+          this.filterData = data.items;
+          this.totalItems = data.items.length;
         },
         error => {
           console.log('Error', error);
@@ -131,6 +135,33 @@ export class TransactionsComponent implements OnInit {
   }
   totalPerPage(page) {
     this.pageSize = page;
+  }
+  sale_id:any;
+  paymentBtn(d){
+    this.sale_id=d.id;
+    this.apiservice.find_sale_payments(this.sale_id)
+      .subscribe(
+        data => {
+          console.log('data', data);
+          this.paymentData=data;
+        },
+        error => {
+          console.log('Error', error);
+        });
+  }
+  pay(d){
+    console.log('saleId',this.sale_id);
+    console.log('d',d);
+    this.apiservice.reconciliate_sale_payment(this.sale_id,d.id)
+      .subscribe(
+        data => {
+          console.log('data', data);
+          this.getSalesData();
+        },
+        error => {
+          console.log('Error', error);
+        });
+
   }
   editSales(){
     console.log('this.editSaleType',this.editSaleType);

@@ -215,9 +215,9 @@ export class ServiceService {
     )
   }
 
-  dashboard(){
+  dashboard(params){
     let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
-    let headers = {headers: httpHeaders};
+    let headers = {headers: httpHeaders, params: params};
 
     return this.httpClient.get<any>(this.api + '/dashboard_view', headers).pipe(
       map(data => {
@@ -227,6 +227,34 @@ export class ServiceService {
           return error;
         })
     )
+  }
+
+  find_sale_payments(sale_id){
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/find_sale_payments/'+sale_id, headers).pipe(
+      map(data => {
+        return data;
+      },
+        error => {
+          return error;
+        })
+    )
+  }
+  reconciliate_sale_payment(sale_id,payment_id){
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/reconciliate_sale_payment/'+sale_id+'/'+payment_id, headers).pipe(
+      map(data => {
+        return data;
+      },
+        error => {
+          return error;
+        })
+    )
+
   }
 
 }
