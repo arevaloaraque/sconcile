@@ -133,8 +133,8 @@
                                   <div class="dropdown-menu dropdown-menu-right">
                                       <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
                                       <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
-                                      <a (click)="paymentBtn(item)" type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">
-                                        RECONCILIATE<i class="icon-gear mr-2"></i>
+                                      <a *ngIf="item.status.name === 'NO CONCILIADA'" class="dropdown-item" (click)="paymentBtn(item)" data-toggle="modal" data-target="#modal_theme_info">
+                                        RECONCILIATE
                                       </a>
                                   </div>
                                 </div>
