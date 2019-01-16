@@ -87,6 +87,17 @@ export class ServiceService {
     ));
   }
 
+  updateUserPassword(data:any) {
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    httpHeaders.set('Content-Type', 'application/json')
+    let headers = { headers: httpHeaders };
+
+    return this.httpClient.post<any>(this.api + '/auth/password/change/', data, headers).pipe(map(user => {
+        return true;
+      }, error => { return error; }
+    ));
+  }
+
   transaction(){
     this.spinner.show();
     let httpHeaders = new HttpHeaders().set('Authorization','LPG '+ localStorage.getItem('token'));
@@ -185,6 +196,20 @@ export class ServiceService {
            return data;
       },
       error=>{
+        return error;
+      })
+    )
+  }
+
+  filterDashboard(){
+
+    let httpHeaders = new HttpHeaders().set('Authorization','LPG '+ localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/filters/dashboard', headers).pipe(
+      map(data=>{
+           return data;
+      }, error=>{
         return error;
       })
     )

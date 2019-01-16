@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../../service.service';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,9 @@ import { ServiceService } from '../../service.service';
 export class DashboardComponent implements OnInit {
 
   constructor(
-    private apiservice: ServiceService
+    private apiservice: ServiceService,
+    private toastrService: ToastrService,
+    private spinner: NgxSpinnerService
   ) { }
 
   startEndDate:string;
@@ -18,9 +22,10 @@ export class DashboardComponent implements OnInit {
   payment_methods:any;
   total_bank_payments:any;
   bank_accounts:any;
+  branches:any;
 
   ngAfterViewInit() {
-
+    this.spinner.hide();
     this.apiservice.dashboard().subscribe(data => {
       this.total_reconciliated_sales = data['total_reconciliated_sales'];
       this.total_amount_sales = data['total_amount_sales']['total'];
@@ -66,7 +71,7 @@ export class DashboardComponent implements OnInit {
       // Setup timeline
       timeline: {
         axisType: 'category',
-        data: ['2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01'],
+        //data: ['2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01'],
         left: 0,
         right: 0,
         bottom: 0,
@@ -264,6 +269,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.verifyToken();
+    this.apiservice.filterDashboard().subscribe(data => {
+        this.branches = data['branches'];
+      }, error => {
+        console.log('Error', error);
+      });
     var date = new Date();
     var last = new Date(date.getTime() - (15 * 24 * 60 * 60 * 1000));
     var sMonth = date.getMonth() + 1;
