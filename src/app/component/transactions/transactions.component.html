@@ -130,13 +130,13 @@
                                   <a href="#" class="list-icons-item" data-toggle="dropdown">
                                     <i class="icon-menu9" data-popup="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i>
                                   </a>
-                                  <!-- <div class="dropdown-menu dropdown-menu-right">
+                                  <div class="dropdown-menu dropdown-menu-right">
                                       <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
                                       <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
-                                      <a (click)="deleteSels(item)" type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">
+                                      <a (click)="paymentBtn(item)" type="button" class="btn bg-info" data-toggle="modal" data-target="#modal_theme_info">
                                         RECONCILIATE<i class="icon-gear mr-2"></i>
                                       </a>
-                                  </div> -->
+                                  </div>
                                 </div>
                             </div>
                         </td>
@@ -234,28 +234,43 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-info">
-        <h6 class="modal-title">Info header</h6>
+        <h6 class="modal-title">Payment Info</h6>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <div class="modal-body">
-        <h6 class="font-weight-semibold">Text in a modal</h6>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo
-          cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-          dolor auctor.</p>
+          <div class="table-responsive">
+              <table class="table datatable-selection-single" *ngIf="totalItems" style="width:100%;">
+                  <thead>
+                      <tr>
+                          <th>Amount</th>
+                          <th>Branch</th>
+                          <th class="text-center">Pay</th>
+                          <!--  -->
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <!-- For filter -->
+                      <!--  -->
+                      <tr *ngFor="let d of paymentData">
+                          <td class="text-center">{{d.amount}}</td>
+                          <td>{{d.extras.branch }}</td>
+                          <td class="text-center">
+                              <a (click)="pay(d)" type="button" data-dismiss="modal" class="btn bg-info" >
+                                Pay
+                              </a>
+                          </td>
+                        </tr>
 
-        <hr>
+                  </tbody>
+              </table>
+            </div>
 
-        <h6 class="font-weight-semibold">Another paragraph</h6>
-        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
-          rutrum faucibus dolor auctor.</p>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-        <button type="button" class="btn bg-info">Save changes</button>
+        <!-- <button type="button" class="btn bg-info">Save changes</button> -->
       </div>
     </div>
   </div>

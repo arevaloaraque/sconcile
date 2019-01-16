@@ -204,4 +204,32 @@ export class ServiceService {
     )
   }
 
+  find_sale_payments(sale_id){
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/find_sale_payments/'+sale_id, headers).pipe(
+      map(data => {
+        return data;
+      },
+        error => {
+          return error;
+        })
+    )
+  }
+  reconciliate_sale_payment(sale_id,payment_id){
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = {headers: httpHeaders};
+
+    return this.httpClient.get<any>(this.api + '/reconciliate_sale_payment/'+sale_id+'/'+payment_id, headers).pipe(
+      map(data => {
+        return data;
+      },
+        error => {
+          return error;
+        })
+    )
+
+  }
+
 }
