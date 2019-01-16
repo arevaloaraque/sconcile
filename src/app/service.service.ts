@@ -26,26 +26,21 @@ export class ServiceService {
       headers: httpHeaders
     };
 
-    return this.httpClient.post<any>(
-      this.api+"/auth/login/",
-        {
-            "username": username,
-            "password": password
-        },
-        options)
-        .pipe(map(user=>{
-            if (user && user.token) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('currentUser', JSON.stringify(user));
-              localStorage.setItem('token', user.token);
+    return this.httpClient.post<any>(this.api + '/auth/login/', {
+          'username': username,
+          'password': password
+      }, options).pipe(map(user => {
+          if (user && user.token) {
+            // store user details and jwt token in local storage to keep user logged in between page refreshes
+            localStorage.setItem('currentUser', JSON.stringify(user));
+            localStorage.setItem('token', user.token);
 
-            }
+          }
 
           return user;
-        },
-        error=>{
-          return error;
-        }))
+      }, error=>{
+        return error;
+      }));
   }
   verify_token(){
     let httpHeaders = new HttpHeaders({
@@ -73,6 +68,23 @@ export class ServiceService {
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
     localStorage.removeItem('token');
+  }
+
+  updateUserData(data:any) {
+    let httpHeaders = new HttpHeaders().set('Authorization', 'LPG ' + localStorage.getItem('token'));
+    let headers = { headers: httpHeaders };
+
+    return this.httpClient.put<any>(this.api + '/rest-auth/user/', data, headers).pipe(map(user => {
+        if (user && user.first_name && user.last_name) {
+          let userSession = JSON.parse(localStorage.getItem('currentUser'));
+          userSession['user']['first_name'] = user.first_name;
+          userSession['user']['last_name'] = user.last_name;
+          localStorage.setItem('currentUser', JSON.stringify(userSession));
+        }
+
+        return true;
+      }, error => { return error; }
+    ));
   }
 
   transaction(){

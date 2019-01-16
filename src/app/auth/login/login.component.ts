@@ -15,8 +15,8 @@ import {ServiceService} from '../../service.service'
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
-    submitted = false;
-    returnUrl: string;
+  submitted = false;
+  returnUrl: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -52,12 +52,12 @@ export class LoginComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
-          this.toastrService.success('Login successfully!');
+          this.toastrService.success('Bienvenido');
           this.spinner.hide();
           this.router.navigate(['/home']);
         },
         error => {
-            this.toastrService.error('Login error!');
+            this.toastrService.error('Ocurrio un error, por favor contacto al administrador de sistema');
             this.spinner.hide();
         });
     }
