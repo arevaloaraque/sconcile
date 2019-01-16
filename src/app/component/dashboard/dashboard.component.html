@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-md-3">&nbsp;</div>
           <div class="form-group col-md-4" style="width:300px;">
-              <div class="input-group">
+              <!-- <div class="input-group">
                   <span class="input-group-prepend">
                     <span class="input-group-text"><i
                         class="icon-vcard"></i></span>
@@ -19,7 +19,22 @@
                   <select multiple="true" class="form-control" [(ngModel)]="branches_filter" name="branches_filter">
                     <option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>
                   </select>
-                </div>
+              </div> -->
+
+              <div class="form-group">
+									<div class="input-group">
+										<span class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="icon-vcard"></i>
+											</span>
+										</span>
+
+										<select class="form-control multiselect" multiple="multiple" data-fouc [(ngModel)]="branches_filter" name="branches_filter">
+											<option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>
+										</select>
+									</div>
+							</div>
+
                 <!-- <div *ngIf="submitted2 && f2.old_password.errors" class="">
                   <div *ngIf="f2.old_password.errors.required" class="text-danger">Este campo es requerido</div>
                 </div> -->

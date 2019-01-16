@@ -273,6 +273,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.verifyToken();
     this.apiservice.filterDashboard().subscribe(data => {
+        console.log('data',data);
         this.branches = data['branches'];
       }, error => {
         console.log('Error', error);
