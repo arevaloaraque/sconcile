@@ -133,7 +133,7 @@
                                   <div class="dropdown-menu dropdown-menu-right">
                                       <a (click)="editSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_primary">Edit</a>
                                       <a (click)="deleteSels(item)" class="dropdown-item" data-toggle="modal" data-target="#modal_delete">Delete</a>
-                                      <a *ngIf="item.status.name === 'NO CONCILIADA'" class="dropdown-item" (click)="paymentBtn(item)" data-toggle="modal" data-target="#modal_theme_info">
+                                      <a *ngIf="item.status.name === 'NO CONCILIADA'" class="dropdown-item" (click)="paymentBtn(item)" data-toggle="modal" data-target="#modal-full">
                                         RECONCILIATE
                                       </a>
                                   </div>
@@ -230,22 +230,29 @@
 </div>
 
 <!-- Modal data -->
-<div id="modal_theme_info" class="modal fade" tabindex="-1">
-  <div class="modal-dialog">
+<div id="modal-full" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-full">
     <div class="modal-content">
       <div class="modal-header bg-info">
-        <h6 class="modal-title">Payment Info</h6>
+        <h6 class="modal-title">Posibles pagos relacionados a esta venta</h6>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <div class="modal-body">
           <div class="table-responsive">
-              <table class="table datatable-selection-single" *ngIf="totalItems" style="width:100%;">
+              <div class="text-center" *ngIf="!paymentData">
+                  <i class="icon-spinner9 spinner mr-2"></i>
+              </div>
+              <table class="table datatable-selection-single" *ngIf="paymentData" style="width:100%;">
+
                   <thead>
                       <tr>
-                          <th>Amount</th>
-                          <th>Branch</th>
-                          <th class="text-center">Pay</th>
+                          <th>Identificacion</th>
+                          <th>Fecha Venta</th>
+                          <th>Identificador</th>
+                          <th>Monto Afecto</th>
+                          <th>Tipo Movimiento</th>
+                          <th>CONCILIAR</th>
                           <!--  -->
                         </tr>
                   </thead>
@@ -253,12 +260,13 @@
                         <!-- For filter -->
                       <!--  -->
                       <tr *ngFor="let d of paymentData">
-                          <td class="text-center">{{d.amount}}</td>
-                          <td>{{d.extras.branch }}</td>
+                          <td>{{d.extras.raw_original_data.identificacion_local}}</td>
+                          <td>{{d.extras.raw_original_data.fecha_venta | date:'dd MMM yyyy'}}</td>
+                          <td>{{d.extras.raw_original_data.identificador}}</td>
+                          <td>{{d.extras.raw_original_data.monto_afecto}}</td>
+                          <td>{{d.extras.raw_original_data.tipo_movimiento}}</td>
                           <td class="text-center">
-                              <a (click)="pay(d)" type="button" data-dismiss="modal" class="btn bg-info" >
-                                Pay
-                              </a>
+                              <button type="button" (click)="pay(d)" data-dismiss="modal" class="btn btn-primary"><i class="icon-git-compare mr-2"></i>CONCILIAR</button>
                           </td>
                         </tr>
 
@@ -269,7 +277,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-link" data-dismiss="modal">Close</button> -->
         <!-- <button type="button" class="btn bg-info">Save changes</button> -->
       </div>
     </div>
