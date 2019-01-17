@@ -5,6 +5,7 @@ import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule,FormsModule }    from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { GrdFilterPipe } from './filter.pipe';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -54,6 +55,7 @@ import { DaterangeDirective } from './daterange.directive';
     AppRoutingModule,
     NgxSpinnerModule,
     CalendarModule,
+    NgMultiSelectDropDownModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

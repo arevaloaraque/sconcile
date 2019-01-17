@@ -7,21 +7,11 @@
   <div class="page-header-content header-elements-md-inline">
 
     <div class="page-title" style="width:100%;">
-      <form (ngSubmit)="loadDashboardData()">
         <div class="row">
-          <div class="col-md-3">&nbsp;</div>
-          <div class="form-group col-md-4" style="width:300px;">
-              <!-- <div class="input-group">
-                  <span class="input-group-prepend">
-                    <span class="input-group-text"><i
-                        class="icon-vcard"></i></span>
-                  </span>
-                  <select multiple="true" class="form-control" [(ngModel)]="branches_filter" name="branches_filter">
-                    <option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>
-                  </select>
-              </div> -->
 
-              <div class="form-group">
+
+          <div class="form-group col-md-4" style="width:300px;">
+              <!-- <div class="form-group">
 									<div class="input-group">
 										<span class="input-group-prepend">
 											<span class="input-group-text">
@@ -29,11 +19,14 @@
 											</span>
 										</span>
 
-										<select class="form-control multiselect" multiple="multiple" data-fouc [(ngModel)]="branches_filter" name="branches_filter">
+										<select class="multiselect" multiple="multiple"  [(ngModel)]="branches_filter">
 											<option *ngFor="let t of branches" [value]="t.id">{{t.code}} {{t.name}}</option>
-										</select>
+                        </select>
+
 									</div>
-							</div>
+              </div> -->
+
+
 
                 <!-- <div *ngIf="submitted2 && f2.old_password.errors" class="">
                   <div *ngIf="f2.old_password.errors.required" class="text-danger">Este campo es requerido</div>
@@ -64,6 +57,17 @@
               </div>
             </div> -->
           </div>
+          <div class="col-md-3">
+            <ng-multiselect-dropdown
+              [placeholder]="'custom placeholder'"
+              [data]="dropdownList"
+              [(ngModel)]="branches_filter"
+              [settings]="dropdownSettings"
+              (onSelect)="onItemSelect($event)"
+              (onSelectAll)="onSelectAll($event)"
+            >
+            </ng-multiselect-dropdown>
+          </div>
 
           <div class="form-group col-md-4">
             <div class="input-group">
@@ -75,11 +79,10 @@
             </div>
           </div>
           <div class="col-md-1">
-            <button type="submit" class="btn btn-outline bg-blue-400 text-blue-400 border-blue-400">
+            <button type="button" (click)="loadDashboardData()" class="btn btn-outline bg-blue-400 text-blue-400 border-blue-400">
               <i class="icon-filter4 mr-2"></i>Filtrar</button>
           </div>
         </div>
-      </form>
     </div>
   </div>
 </div>

@@ -9,6 +9,8 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  dropdownList = [];
+  dropdownSettings = {};
 
   constructor(
     private apiservice: ServiceService,
@@ -24,8 +26,7 @@ export class DashboardComponent implements OnInit {
   submitted2:any;
   bank_accounts:any;
   branches:any;
-  branches_filter:any;
-
+  branches_filter=[];
   ngAfterViewInit() {
     this.spinner.hide();
     this.loadDashboardData();
@@ -279,14 +280,37 @@ export class DashboardComponent implements OnInit {
         console.log('Error', error);
       });
     var date = new Date();
-    var last = new Date(date.getTime() - (15 * 24 * 60 * 60 * 1000));
+    var last = new Date(date.getTime() - (60 * 24 * 60 * 60 * 1000));
     var sMonth = date.getMonth() + 1;
     var lMonth = last.getMonth() + 1;
     var sDate = sMonth + '/' + date.getDate() + '/' + date.getFullYear();
     var lDate = lMonth + '/' + last.getDate() + '/' + last.getFullYear();
     this.startEndDate= lDate + ' - ' + sDate;
-  }
 
+    this.dropdownList = [
+      { item_id: 1, value: 'Mumbai' },
+      { item_id: 2, value: 'Bangaluru' },
+      { item_id: 3, value: 'Pune' },
+      { item_id: 4, value: 'Navsari' },
+      { item_id: 5, value: 'New Delhi' }
+    ];
+
+    this.dropdownSettings = {
+      singleSelection: false,
+      idField: 'item_id',
+      textField: 'value',
+      selectAllText: 'Select All',
+      unSelectAllText: 'UnSelect All',
+      itemsShowLimit: 3,
+      allowSearchFilter: true
+    };
+  }
+  onItemSelect(item: any) {
+    console.log(item);
+  }
+  onSelectAll(items: any) {
+    console.log(items);
+  }
   onStartDateChange(date){
     this.startEndDate = date;
   }
@@ -306,14 +330,15 @@ export class DashboardComponent implements OnInit {
       }
     )
   }
-
   loadDashboardData() {
     let params = {
       'branches': this.branches_filter,
       'startEndData': this.startEndDate
     }
     console.log(params);
+    console.log('branches_filter',this.branches_filter);
     this.apiservice.dashboard(params).subscribe(data => {
+      console.log('data',data);
       this.total_reconciliated_sales = data['total_reconciliated_sales'];
       this.total_amount_sales = data['total_amount_sales']['total'];
       this.payment_methods = data['payment_methods'];
