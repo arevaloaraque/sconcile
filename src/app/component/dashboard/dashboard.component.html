@@ -74,7 +74,7 @@
               <span class="input-group-prepend">
                 <span class="input-group-text"><i class="icon-calendar22"></i></span>
               </span>
-              <input type="text" class="form-control" appDaterange [(ngModel)]="startEndDate" name="startEndDate" (ApplyDateChange)="onStartDateChange($event)"
+              <input type="text" class="form-control " appDaterange [(ngModel)]="startEndDate" name="startEndDate" (ApplyDateChange)="onStartDateChange($event)"
                 (CancelDateChange)="onStartDateChange($event)" (HideDateChange)="onStartDateChange($event)" (change)="filter()">
             </div>
           </div>

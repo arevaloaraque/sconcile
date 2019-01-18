@@ -15,9 +15,19 @@ export class DaterangeDirective {
   }
   ngOnInit() {
       setTimeout(() => {
-          $(this.element.nativeElement).daterangepicker({
+        $(this.element.nativeElement).daterangepicker({
               applyClass: 'btn-success',
-              cancelClass: 'btn-danger'
+              cancelClass: 'btn-danger',
+              locale: {
+                applyLabel: 'Вперед',
+                cancelLabel: 'Отмена',
+                startLabel: 'Начальная дата',
+                endLabel: 'Конечная дата',
+                customRangeLabel: 'Выбрать дату',
+                daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт','Сб'],
+                monthNames: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
+                firstDay: 1
+            }
           }).on('apply.daterangepicker', (ev, picker) =>  {
               var startDate = picker.startDate;
               var endDate = picker.endDate;
